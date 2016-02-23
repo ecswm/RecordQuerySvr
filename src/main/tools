@@ -1,0 +1,11 @@
+package tools
+
+import(
+"encoding/json"
+"fmt")
+
+
+
+func GenerateErrorJson(callid string,msg string){
+
+}
