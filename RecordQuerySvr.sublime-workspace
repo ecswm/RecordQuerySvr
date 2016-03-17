@@ -4,6 +4,130 @@
 		"selected_items":
 		[
 			[
+				"c",
+				"cfg	Configuration ν"
+			],
+			[
+				"st",
+				"strings	 package ρ"
+			],
+			[
+				"t",
+				"ToUpper	string ƒ"
+			],
+			[
+				"E",
+				"EncodeToString	string ƒ"
+			],
+			[
+				"o",
+				"outarray	[]string ν"
+			],
+			[
+				"cf",
+				"cfgpath	string ν"
+			],
+			[
+				"tr",
+				"TrimRight	string ƒ"
+			],
+			[
+				"Re",
+				"DoubleCallAppReq	struct ʈ"
+			],
+			[
+				"Ca",
+				"caller_number	string ν"
+			],
+			[
+				"Fo",
+				"FormValue	string ƒ"
+			],
+			[
+				"Do",
+				"DoubleCallApp	struct ʈ"
+			],
+			[
+				"re",
+				"retjson	string ν"
+			],
+			[
+				"d",
+				"doublecallrsp	DoubleCallAppRsp ν"
+			],
+			[
+				"dou",
+				"doublecallrsp	DoubleCallAppRsp ν"
+			],
+			[
+				"Dou",
+				"DoubleCallAppRsp	struct ʈ"
+			],
+			[
+				"call",
+				"called_number	string ν"
+			],
+			[
+				"D",
+				"DoubleCallApp	struct ʈ"
+			],
+			[
+				"Trim",
+				"TrimRight	string ƒ"
+			],
+			[
+				"s",
+				"sigparams	string ν"
+			],
+			[
+				"pos",
+				"PostFormValue	string ƒ"
+			],
+			[
+				"P",
+				"PostFormValue	string ƒ"
+			],
+			[
+				"ca",
+				"called_number	string ν"
+			],
+			[
+				"md",
+				"md5hash	[]byte ν"
+			],
+			[
+				"m",
+				"md5	 package ρ"
+			],
+			[
+				"n",
+				"NewDecoder	*json.Decoder ƒ"
+			],
+			[
+				"p",
+				"pushreturl	string ν"
+			],
+			[
+				"se",
+				"Second	 Ɩ"
+			],
+			[
+				"a",
+				"After	<-chan time.Time ƒ"
+			],
+			[
+				"e",
+				"event	 ν"
+			],
+			[
+				"Pri",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"fsclient",
+				"fsclient	FsCti ν"
+			],
+			[
 				"Fs",
 				"FsCti	struct ʈ"
 			],
@@ -32,28 +156,12 @@
 				"recordinginfo	dbhandler.RecordInfo ν"
 			],
 			[
-				"re",
-				"recordinginfo	dbhandler.RecordInfo ν"
-			],
-			[
 				"recor",
 				"recordingpath	string ν"
 			],
 			[
 				"C",
 				"CalledNumber	string ν"
-			],
-			[
-				"Ca",
-				"CallerNumber	string ν"
-			],
-			[
-				"Re",
-				"RecordingTime	string ν"
-			],
-			[
-				"d",
-				"db	*sql.DB ν"
 			],
 			[
 				"db",
@@ -68,20 +176,12 @@
 				"func main	func main {...} ʂ"
 			],
 			[
-				"p",
-				"Path	string ν"
-			],
-			[
 				"w",
 				"Write	int, error ƒ"
 			],
 			[
 				"Res",
 				"ResponseWriter	interface ¡"
-			],
-			[
-				"ca",
-				"called_number	[]string ν"
 			],
 			[
 				"sp",
@@ -104,10 +204,6 @@
 				"HandleFunc	 ƒ"
 			],
 			[
-				"st",
-				"stmt	*sql.Stmt ν"
-			],
-			[
 				"Pr",
 				"Println	n int, err error ƒ"
 			],
@@ -116,20 +212,8 @@
 				"QueryRow	*sql.Row ƒ"
 			],
 			[
-				"m",
-				"mysqlhandler	*MysqlHandler ν"
-			],
-			[
-				"s",
-				"sql	 package ρ"
-			],
-			[
 				"imp",
 				"import	import (...) ʂ"
-			],
-			[
-				"c",
-				"command_str"
 			],
 			[
 				"fusionpbx",
@@ -160,20 +244,12 @@
 				"end"
 			],
 			[
-				"e",
-				"err_sound"
-			],
-			[
 				"ivr",
 				"ivr_sound"
 			],
 			[
 				"ma",
 				"main_menu_action"
-			],
-			[
-				"tr",
-				"true"
 			],
 			[
 				"play",
@@ -183,22 +259,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/main/main.go",
-			"settings":
-			{
-				"buffer_size": 3342,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/dbhandler/recordinfo.go",
-			"settings":
-			{
-				"buffer_size": 656,
-				"line_ending": "Unix"
-			}
-		},
 		{
 			"file": "src/dbhandler/mysqlhandler.go",
 			"settings":
@@ -219,7 +279,7 @@
 			"file": "src/goesl/message.go",
 			"settings":
 			{
-				"buffer_size": 4814,
+				"buffer_size": 4555,
 				"line_ending": "Unix"
 			}
 		},
@@ -235,17 +295,9 @@
 			"file": "src/main/fscti.go",
 			"settings":
 			{
-				"buffer_size": 1605,
+				"buffer_size": 3194,
 				"line_ending": "Unix",
 				"name": "package"
-			}
-		},
-		{
-			"file": "/Users/farrell/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/liukaijin@china95059.com/Mail/31/5/2909163479798066149.attachment/ESL/ESLproject/src/myfscallhandlertest.java",
-			"settings":
-			{
-				"buffer_size": 2322,
-				"line_ending": "Windows"
 			}
 		},
 		{
@@ -260,7 +312,7 @@
 			"file": "src/goesl/client.go",
 			"settings":
 			{
-				"buffer_size": 2701,
+				"buffer_size": 2702,
 				"line_ending": "Unix"
 			}
 		},
@@ -273,10 +325,59 @@
 			}
 		},
 		{
-			"file": "src/goesl/helpers.go",
+			"file": "src/main/main.go",
 			"settings":
 			{
-				"buffer_size": 2022,
+				"buffer_size": 4594,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/eventsocket/eventsocket.go",
+			"settings":
+			{
+				"buffer_size": 11511,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/farrell/Downloads/switch.conf.xml",
+			"settings":
+			{
+				"buffer_size": 7107,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/farrell/Downloads/switch.conf1.xml",
+			"settings":
+			{
+				"buffer_size": 7522,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/dbhandler/recordinfo.go",
+			"settings":
+			{
+				"buffer_size": 656,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/config.json",
+			"settings":
+			{
+				"buffer_size": 357,
+				"line_ending": "Unix",
+				"name": "{\"BindIp\":\"192.168.1.103\","
+			}
+		},
+		{
+			"file": "src/main/config.go",
+			"settings":
+			{
+				"buffer_size": 1760,
 				"line_ending": "Unix"
 			}
 		}
@@ -337,23 +438,27 @@
 	},
 	"file_history":
 	[
+		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/main/fsapp.go",
+		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/dbhandler/recordinfo.go",
+		"/Users/farrell/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/liukaijin@china95059.com/Mail/31/5/2909163479798066149.attachment/ESL/ESLproject/src/myfscallhandlertest.java",
+		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/main/eventsocket.go",
+		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/eventsocket/eventsocket.go",
+		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/connection.go",
+		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/helpers.go",
+		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/main/main.go",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/logger.go",
 		"/Users/farrell/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/liukaijin@china95059.com/Mail/31/5/2909163479798066149.attachment/ESL/ESLproject/src/ESLtest.java",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/vars.go",
-		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/helpers.go",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/main/fsapi.go",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/client.go",
 		"/Users/farrell/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/liukaijin@china95059.com/Mail/26/16/8260014041868814160.attachment/httpandplay/Httppost/src/contract.java",
 		"/Users/farrell/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/liukaijin@china95059.com/Mail/26/16/8260014041868814160.attachment/httpandplay/Httppost/src/playwav.java",
 		"/Users/farrell/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/liukaijin@china95059.com/Mail/26/16/8260014041868814160.attachment/httpandplay/Httppost/src/HttpRequest.java",
 		"/Users/farrell/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/liukaijin@china95059.com/Mail/26/16/8260014041868814160.attachment/httpandplay/Httppost/src/MP3Player.java",
-		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/main/main.go",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/dbhandler/mysqlhandler.go",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/build.sh",
 		"/Users/farrell/Projects/CDRServer/CDRServer/bin/Debug/call_fs.py",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/message.go",
-		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/connection.go",
-		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/dbhandler/recordinfo.go",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/github.com/go-sql-driver/mysql/connection.go",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/github.com/op/go-logging/logger.go",
 		"/Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl/examples/client.go",
@@ -402,6 +507,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"BACK",
+			"BACKG",
+			"				\n",
+			"back",
+			"farrell:~ farrell$ /Users/farrell/Documents/GOLang/src/RecordQuerySvr/main ; exit;\nContent-Type: \"command/reply\"\nJob-Uuid: \"8f36442c-e458-11e5-8509-0d2b58eb5f11\"\nReply-Text: \"+OK Job-UUID: 8f36442c-e458-11e5-8509-0d2b58eb5f11\"\n\nNew event\nApi-Command: \"module_exists\"\nApi-Command-Argument: \"mod_memcache\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_loadable_module.c\"\nEvent-Calling-Function: \"switch_api_execute\"\nEvent-Calling-Line-Number: \"2424\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471554075\"\nEvent-Name: \"API\"\nEvent-Sequence: \"17090\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\n\nNew event\nApi-Command: \"memcache\"\nApi-Command-Argument: \"set directory:80001@10.0.0.35 '<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\" standalone=\\\"no\\\"?>\\n<document type=\\\"freeswitch/xml\\\">\\n\\t<section name=\\\"directory\\\">\\n\\t\\t<domain name=\\\"10.0.0.35\\\" alias=\\\"true\\\">\\n            <params>\\n                    <param name=\\\"jsonrpc-allowed-methods\\\" value=\\\"verto\\\"/>\\n                    <param name=\\\"jsonrpc-allowed-event-channels\\\" value=\\\"demo,conference,presence\\\"/>\\n            </params>\\n\\t\\t\\t<groups>\\n\\t\\t\\t\\t<group name=\\\"default\\\">\\n\\t\\t\\t\\t\\t<users>\\n\\t\\t\\t\\t\\t\\t<user id=\\\"80001\\\" number-alias=\\\"80001\\\" type=>\\n\\t\\t\\t\\t\\t\\t\\t<params>\\n\\t\\t\\t\\t\\t\\t\\t\\t<param name=\\\"password\\\" value=\\\"1234\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<param name=\\\"vm-enabled\\\" value=\\\"true\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<param name=\\\"dial-string\\\" value=\\\"{sip_invite_domain=10.0.0.35,presence_id=80001@10.0.0.35}${sofia_contact(80001@10.0.0.35)}\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<param name=\\\"verto-context\\\" value=\\\"10.0.0.35\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<param name=\\\"verto-dialplan\\\" value=\\\"XML\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<param name=\\\"jsonrpc-allowed-methods\\\" value=\\\"verto\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<param name=\\\"jsonrpc-allowed-event-channels\\\" value=\\\"demo,conference,presence\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t</params>\\n\\t\\t\\t\\t\\t\\t\\t<variables>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"domain_uuid\\\" value=\\\"f04e200f-c807-40c8-80e2-d2a203471b36\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"domain_name\\\" value=\\\"10.0.0.35\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"extension_uuid\\\" value=\\\"72b25d60-9709-4141-995f-f82441e28654\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"call_timeout\\\" value=\\\"30\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"caller_id_name\\\" value=\\\"80001\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"caller_id_number\\\" value=\\\"80001\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"accountcode\\\" value=\\\"10.0.0.35\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"user_context\\\" value=\\\"10.0.0.35\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"effective_caller_id_number\\\" value=\\\"950598\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"outbound_caller_id_number\\\" value=\\\"950598\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"directory-visible\\\" value=\\\"true\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"directory-exten-visible\\\" value=\\\"true\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"limit_max\\\" value=\\\"20\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"record_stereo\\\" value=\\\"true\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"transfer_fallback_extension\\\" value=\\\"operator\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t\\t<variable name=\\\"export_vars\\\" value=\\\"domain_name\\\"/>\\n\\t\\t\\t\\t\\t\\t\\t</variables>\\n\\t\\t\\t\\t\\t\\t</user>\\n\\t\\t\\t\\t\\t</users>\\n\\t\\t\\t\\t</group>\\n\\t\\t\\t</groups>\\n\\t\\t</domain>\\n\\t</section>\\n</document>' 3600\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_loadable_module.c\"\nEvent-Calling-Function: \"switch_api_execute\"\nEvent-Calling-Line-Number: \"2424\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"API\"\nEvent-Sequence: \"17091\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\n\nNew event\nApi-Command: \"sofia_contact\"\nApi-Command-Argument: \"80001@10.0.0.35\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_loadable_module.c\"\nEvent-Calling-Function: \"switch_api_execute\"\nEvent-Calling-Line-Number: \"2424\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"API\"\nEvent-Sequence: \"17092\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-State: \"CS_NONE\"\nChannel-State-Number: \"1\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_session.c\"\nEvent-Calling-Function: \"switch_core_session_outgoing_channel\"\nEvent-Calling-Line-Number: \"702\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_OUTGOING\"\nEvent-Sequence: \"17093\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-State: \"CS_NONE\"\nChannel-State-Number: \"1\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_session.c\"\nEvent-Calling-Function: \"switch_core_session_outgoing_channel\"\nEvent-Calling-Line-Number: \"702\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_OUTGOING\"\nEvent-Sequence: \"17094\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-State: \"CS_NONE\"\nChannel-State-Number: \"1\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_session.c\"\nEvent-Calling-Function: \"switch_core_session_outgoing_channel\"\nEvent-Calling-Line-Number: \"702\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_OUTGOING\"\nEvent-Sequence: \"17095\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"1\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17096\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_run\"\nEvent-Calling-Line-Number: \"514\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_CREATE\"\nEvent-Sequence: \"17099\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"19710\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457330761 1457330762 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 19710 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"77\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D4cff3cd15e551efb\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_run\"\nEvent-Calling-Line-Number: \"520\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_ORIGINATE\"\nEvent-Sequence: \"17100\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"19710\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457330761 1457330762 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 19710 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"77\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D4cff3cd15e551efb\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_ROUTING\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17101\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAlt_Event_Type: \"dialog\"\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_ROUTING\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_presence\"\nEvent-Calling-Line-Number: \"758\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"PRESENCE_IN\"\nEvent-Sequence: \"17102\"\nEvent_Count: \"0\"\nEvent_Type: \"presence\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nFrom: \"80001@10.0.0.35\"\nLogin: \"src/switch_channel.c\"\nPresence-Call-Direction: \"outbound\"\nPresence-Call-Info-State: \"progressing\"\nPresence-Calling-File: \"src/switch_core_state_machine.c\"\nPresence-Calling-Function: \"check_presence\"\nPresence-Calling-Line: \"412\"\nProto: \"any\"\nRpid: \"unknown\"\nStatus: \"CS_ROUTING\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17103\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"1\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17097\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_run\"\nEvent-Calling-Line-Number: \"514\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_CREATE\"\nEvent-Sequence: \"17104\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"26376\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457324095 1457324096 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 26376 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"78\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D9ac1aab6cc908b1b\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_run\"\nEvent-Calling-Line-Number: \"520\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_ORIGINATE\"\nEvent-Sequence: \"17105\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"26376\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457324095 1457324096 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 26376 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"78\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D9ac1aab6cc908b1b\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_ROUTING\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17106\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAlt_Event_Type: \"dialog\"\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_ROUTING\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_presence\"\nEvent-Calling-Line-Number: \"758\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"PRESENCE_IN\"\nEvent-Sequence: \"17107\"\nEvent_Count: \"0\"\nEvent_Type: \"presence\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nFrom: \"80001@10.0.0.35\"\nLogin: \"src/switch_channel.c\"\nPresence-Call-Direction: \"outbound\"\nPresence-Call-Info-State: \"progressing\"\nPresence-Calling-File: \"src/switch_core_state_machine.c\"\nPresence-Calling-Function: \"check_presence\"\nPresence-Calling-Line: \"412\"\nProto: \"any\"\nRpid: \"unknown\"\nStatus: \"CS_ROUTING\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17108\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"1\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17098\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_run\"\nEvent-Calling-Line-Number: \"514\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_CREATE\"\nEvent-Sequence: \"17109\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"24502\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457325969 1457325970 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 24502 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"79\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=e25b97244836b6e9;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3De25b97244836b6e9\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=e25b97244836b6e9\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_INIT\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_run\"\nEvent-Calling-Line-Number: \"520\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_ORIGINATE\"\nEvent-Sequence: \"17110\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"24502\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457325969 1457325970 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 24502 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"79\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=e25b97244836b6e9;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3De25b97244836b6e9\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=e25b97244836b6e9\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_ROUTING\"\nChannel-State-Number: \"2\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17111\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAlt_Event_Type: \"dialog\"\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_ROUTING\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_presence\"\nEvent-Calling-Line-Number: \"758\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"PRESENCE_IN\"\nEvent-Sequence: \"17112\"\nEvent_Count: \"0\"\nEvent_Type: \"presence\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nFrom: \"80001@10.0.0.35\"\nLogin: \"src/switch_channel.c\"\nPresence-Call-Direction: \"outbound\"\nPresence-Call-Info-State: \"progressing\"\nPresence-Calling-File: \"src/switch_core_state_machine.c\"\nPresence-Calling-Function: \"check_presence\"\nPresence-Calling-Line: \"412\"\nProto: \"any\"\nRpid: \"unknown\"\nStatus: \"CS_ROUTING\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471574007\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17113\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_mark_ring_ready_value\"\nEvent-Calling-Line-Number: \"3291\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471754069\"\nEvent-Name: \"CHANNEL_PROGRESS\"\nEvent-Sequence: \"17114\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"19710\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457330761 1457330762 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 19710 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"77\"\nVariable_sip_call_id: \"669763a8-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_contact_host: \"10.0.10.8\"\nVariable_sip_contact_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_contact_port: \"51007\"\nVariable_sip_contact_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_contact_user: \"80001\"\nVariable_sip_cseq: \"88339171\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D4cff3cd15e551efb\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_from_tag: \"Z0S8U552vDB2B\"\nVariable_sip_from_uri: \"950598@10.0.0.35\"\nVariable_sip_from_user: \"950598\"\nVariable_sip_full_from: \"\\\"\\\" <sip:950598@10.0.0.35>;tag=Z0S8U552vDB2B\"\nVariable_sip_full_to: \"\\\"88006\\\" <sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>;tag=b66c6541\"\nVariable_sip_full_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKmr629emXt1BZc\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_recover_contact: \"<sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>\"\nVariable_sip_recover_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKmr629emXt1BZc\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb\"\nVariable_sip_to_display: \"88006\"\nVariable_sip_to_host: \"10.0.10.8\"\nVariable_sip_to_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_to_port: \"51007\"\nVariable_sip_to_tag: \"b66c6541\"\nVariable_sip_to_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_to_user: \"80001\"\nVariable_sip_user_agent: \"X-Lite release 4.9.1 stamp 78725\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"RINGING\"\nChannel-Call-State-Number: \"2\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_callstate\"\nEvent-Calling-Line-Number: \"285\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471754069\"\nEvent-Name: \"CHANNEL_CALLSTATE\"\nEvent-Sequence: \"17115\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nOriginal-Channel-Call-State: \"DOWN\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_mark_ring_ready_value\"\nEvent-Calling-Line-Number: \"3291\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471914068\"\nEvent-Name: \"CHANNEL_PROGRESS\"\nEvent-Sequence: \"17116\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"26376\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457324095 1457324096 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 26376 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"78\"\nVariable_sip_call_id: \"6698140a-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_contact_host: \"10.0.10.8\"\nVariable_sip_contact_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_contact_port: \"51007\"\nVariable_sip_contact_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_contact_user: \"80001\"\nVariable_sip_cseq: \"88339171\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D9ac1aab6cc908b1b\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_from_tag: \"09j1X0p6Sp1mQ\"\nVariable_sip_from_uri: \"950598@10.0.0.35\"\nVariable_sip_from_user: \"950598\"\nVariable_sip_full_from: \"\\\"\\\" <sip:950598@10.0.0.35>;tag=09j1X0p6Sp1mQ\"\nVariable_sip_full_to: \"\\\"88006\\\" <sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b>;tag=4537ef53\"\nVariable_sip_full_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKN1ZUBa50Qa2Hr\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_recover_contact: \"<sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>\"\nVariable_sip_recover_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKN1ZUBa50Qa2Hr\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b\"\nVariable_sip_to_display: \"88006\"\nVariable_sip_to_host: \"10.0.10.8\"\nVariable_sip_to_params: \"rinstance=9ac1aab6cc908b1b\"\nVariable_sip_to_port: \"51007\"\nVariable_sip_to_tag: \"4537ef53\"\nVariable_sip_to_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_to_user: \"80001\"\nVariable_sip_user_agent: \"X-Lite release 4.9.1 stamp 78725\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"ringing\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"RINGING\"\nChannel-Call-State-Number: \"2\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"7\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_callstate\"\nEvent-Calling-Line-Number: \"285\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471914068\"\nEvent-Name: \"CHANNEL_CALLSTATE\"\nEvent-Sequence: \"17117\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nOriginal-Channel-Call-State: \"DOWN\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_hangup\"\nEvent-Calling-Line-Number: \"3239\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:32 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:32\"\nEvent-Date-Timestamp: \"1457350472034051\"\nEvent-Name: \"CHANNEL_HANGUP\"\nEvent-Sequence: \"17118\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"24502\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457325969 1457325970 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 24502 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"79\"\nVariable_sip_call_id: \"6698ad7b-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=e25b97244836b6e9;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3De25b97244836b6e9\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=e25b97244836b6e9\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"DOWN\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:32 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:32\"\nEvent-Date-Timestamp: \"1457350472034051\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17119\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350472034051\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-State-Number: \"7\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_callstate\"\nEvent-Calling-Line-Number: \"285\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:32 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:32\"\nEvent-Date-Timestamp: \"1457350472034051\"\nEvent-Name: \"CHANNEL_CALLSTATE\"\nEvent-Sequence: \"17120\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nOriginal-Channel-Call-State: \"DOWN\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAlt_Event_Type: \"dialog\"\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350472034051\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_presence\"\nEvent-Calling-Line-Number: \"758\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:32 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:32\"\nEvent-Date-Timestamp: \"1457350472034051\"\nEvent-Name: \"PRESENCE_IN\"\nEvent-Sequence: \"17121\"\nEvent_Count: \"1\"\nEvent_Type: \"presence\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nFrom: \"80001@10.0.0.35\"\nHangup-Cause: \"USER_BUSY\"\nLogin: \"src/switch_channel.c\"\nPresence-Call-Direction: \"outbound\"\nPresence-Call-Info-State: \"idle\"\nPresence-Calling-File: \"src/switch_core_state_machine.c\"\nPresence-Calling-Function: \"check_presence\"\nPresence-Calling-Line: \"412\"\nProto: \"any\"\nRpid: \"unknown\"\nStatus: \"CS_HANGUP\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350472034051\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:32 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:32\"\nEvent-Date-Timestamp: \"1457350472034051\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17122\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350472034051\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_reporting_state\"\nEvent-Calling-Line-Number: \"834\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:32 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:32\"\nEvent-Date-Timestamp: \"1457350472074102\"\nEvent-Name: \"CHANNEL_HANGUP_COMPLETE\"\nEvent-Sequence: \"17123\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_answer_epoch: \"0\"\nVariable_answer_uepoch: \"0\"\nVariable_answermsec: \"0\"\nVariable_answersec: \"0\"\nVariable_answerusec: \"0\"\nVariable_billmsec: \"0\"\nVariable_billsec: \"0\"\nVariable_billusec: \"0\"\nVariable_bridge_epoch: \"0\"\nVariable_bridge_uepoch: \"0\"\nVariable_call_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_caller_id: \"950598\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_digits_dialed: \"none\"\nVariable_direction: \"outbound\"\nVariable_duration: \"1\"\nVariable_end_epoch: \"1457350472\"\nVariable_end_stamp: \"2016-03-07 19:34:32\"\nVariable_end_uepoch: \"1457350472034051\"\nVariable_flow_billmsec: \"0\"\nVariable_flow_billsec: \"0\"\nVariable_flow_billusec: \"0\"\nVariable_hangup_cause: \"USER_BUSY\"\nVariable_hangup_cause_q850: \"17\"\nVariable_hold_accum_ms: \"0\"\nVariable_hold_accum_seconds: \"0\"\nVariable_hold_accum_usec: \"0\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_last_hold_epoch: \"0\"\nVariable_last_hold_uepoch: \"0\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"24502\"\nVariable_mduration: \"460\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_profile_start_epoch: \"1457350471\"\nVariable_profile_start_stamp: \"2016-03-07 19:34:31\"\nVariable_profile_start_uepoch: \"1457350471574007\"\nVariable_progress_epoch: \"0\"\nVariable_progress_media_epoch: \"0\"\nVariable_progress_media_uepoch: \"0\"\nVariable_progress_mediamsec: \"0\"\nVariable_progress_mediasec: \"0\"\nVariable_progress_mediausec: \"0\"\nVariable_progress_uepoch: \"0\"\nVariable_progressmsec: \"0\"\nVariable_progresssec: \"0\"\nVariable_progressusec: \"0\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_resurrect_epoch: \"0\"\nVariable_resurrect_uepoch: \"0\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457325969 1457325970 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 24502 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"79\"\nVariable_sip_call_id: \"6698ad7b-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=e25b97244836b6e9;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3De25b97244836b6e9\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=e25b97244836b6e9\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_start_epoch: \"1457350471\"\nVariable_start_stamp: \"2016-03-07 19:34:31\"\nVariable_start_uepoch: \"1457350471574007\"\nVariable_uduration: \"460044\"\nVariable_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_waitmsec: \"0\"\nVariable_waitsec: \"0\"\nVariable_waitusec: \"0\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"RINGING\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_hangup\"\nEvent-Calling-Line-Number: \"3239\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:37 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:37\"\nEvent-Date-Timestamp: \"1457350477234072\"\nEvent-Name: \"CHANNEL_HANGUP\"\nEvent-Sequence: \"17124\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"19710\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457330761 1457330762 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 19710 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"77\"\nVariable_sip_call_id: \"669763a8-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_contact_host: \"10.0.10.8\"\nVariable_sip_contact_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_contact_port: \"51007\"\nVariable_sip_contact_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_contact_user: \"80001\"\nVariable_sip_cseq: \"88339171\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D4cff3cd15e551efb\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_from_tag: \"Z0S8U552vDB2B\"\nVariable_sip_from_uri: \"950598@10.0.0.35\"\nVariable_sip_from_user: \"950598\"\nVariable_sip_full_from: \"\\\"\\\" <sip:950598@10.0.0.35>;tag=Z0S8U552vDB2B\"\nVariable_sip_full_to: \"\\\"88006\\\" <sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>;tag=b66c6541\"\nVariable_sip_full_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKmr629emXt1BZc\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_recover_contact: \"<sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>\"\nVariable_sip_recover_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKmr629emXt1BZc\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_display: \"88006\"\nVariable_sip_to_host: \"10.0.10.8\"\nVariable_sip_to_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_to_port: \"51007\"\nVariable_sip_to_tag: \"b66c6541\"\nVariable_sip_to_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_to_user: \"80001\"\nVariable_sip_user_agent: \"X-Lite release 4.9.1 stamp 78725\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"RINGING\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:37 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:37\"\nEvent-Date-Timestamp: \"1457350477234072\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17125\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350477234072\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-State-Number: \"7\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_callstate\"\nEvent-Calling-Line-Number: \"285\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:37 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:37\"\nEvent-Date-Timestamp: \"1457350477234072\"\nEvent-Name: \"CHANNEL_CALLSTATE\"\nEvent-Sequence: \"17126\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nOriginal-Channel-Call-State: \"RINGING\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAlt_Event_Type: \"dialog\"\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350477234072\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_presence\"\nEvent-Calling-Line-Number: \"758\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:37 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:37\"\nEvent-Date-Timestamp: \"1457350477234072\"\nEvent-Name: \"PRESENCE_IN\"\nEvent-Sequence: \"17127\"\nEvent_Count: \"1\"\nEvent_Type: \"presence\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nFrom: \"80001@10.0.0.35\"\nHangup-Cause: \"USER_BUSY\"\nLogin: \"src/switch_channel.c\"\nPresence-Call-Direction: \"outbound\"\nPresence-Call-Info-State: \"idle\"\nPresence-Calling-File: \"src/switch_core_state_machine.c\"\nPresence-Calling-Function: \"check_presence\"\nPresence-Calling-Line: \"412\"\nProto: \"any\"\nRpid: \"unknown\"\nStatus: \"CS_HANGUP\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350477234072\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:37 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:37\"\nEvent-Date-Timestamp: \"1457350477234072\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17128\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350477234072\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_reporting_state\"\nEvent-Calling-Line-Number: \"834\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:37 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:37\"\nEvent-Date-Timestamp: \"1457350477294069\"\nEvent-Name: \"CHANNEL_HANGUP_COMPLETE\"\nEvent-Sequence: \"17129\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_answer_epoch: \"0\"\nVariable_answer_uepoch: \"0\"\nVariable_answermsec: \"0\"\nVariable_answersec: \"0\"\nVariable_answerusec: \"0\"\nVariable_billmsec: \"0\"\nVariable_billsec: \"0\"\nVariable_billusec: \"0\"\nVariable_bridge_epoch: \"0\"\nVariable_bridge_uepoch: \"0\"\nVariable_call_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_caller_id: \"950598\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_digits_dialed: \"none\"\nVariable_direction: \"outbound\"\nVariable_duration: \"6\"\nVariable_end_epoch: \"1457350477\"\nVariable_end_stamp: \"2016-03-07 19:34:37\"\nVariable_end_uepoch: \"1457350477234072\"\nVariable_flow_billmsec: \"0\"\nVariable_flow_billsec: \"0\"\nVariable_flow_billusec: \"0\"\nVariable_hangup_cause: \"USER_BUSY\"\nVariable_hangup_cause_q850: \"17\"\nVariable_hold_accum_ms: \"0\"\nVariable_hold_accum_seconds: \"0\"\nVariable_hold_accum_usec: \"0\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_last_hold_epoch: \"0\"\nVariable_last_hold_uepoch: \"0\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"19710\"\nVariable_mduration: \"5660\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_profile_start_epoch: \"1457350471\"\nVariable_profile_start_stamp: \"2016-03-07 19:34:31\"\nVariable_profile_start_uepoch: \"1457350471574007\"\nVariable_progress_epoch: \"1457350471\"\nVariable_progress_media_epoch: \"0\"\nVariable_progress_media_uepoch: \"0\"\nVariable_progress_mediamsec: \"0\"\nVariable_progress_mediasec: \"0\"\nVariable_progress_mediausec: \"0\"\nVariable_progress_stamp: \"2016-03-07 19:34:31\"\nVariable_progress_uepoch: \"1457350471754069\"\nVariable_progressmsec: \"180\"\nVariable_progresssec: \"0\"\nVariable_progressusec: \"180062\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_resurrect_epoch: \"0\"\nVariable_resurrect_uepoch: \"0\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457330761 1457330762 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 19710 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"77\"\nVariable_sip_call_id: \"669763a8-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_contact_host: \"10.0.10.8\"\nVariable_sip_contact_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_contact_port: \"51007\"\nVariable_sip_contact_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_contact_user: \"80001\"\nVariable_sip_cseq: \"88339171\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D4cff3cd15e551efb\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_from_tag: \"Z0S8U552vDB2B\"\nVariable_sip_from_uri: \"950598@10.0.0.35\"\nVariable_sip_from_user: \"950598\"\nVariable_sip_full_from: \"\\\"\\\" <sip:950598@10.0.0.35>;tag=Z0S8U552vDB2B\"\nVariable_sip_full_to: \"\\\"88006\\\" <sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>;tag=b66c6541\"\nVariable_sip_full_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKmr629emXt1BZc\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_recover_contact: \"<sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>\"\nVariable_sip_recover_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKmr629emXt1BZc\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_display: \"88006\"\nVariable_sip_to_host: \"10.0.10.8\"\nVariable_sip_to_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_to_port: \"51007\"\nVariable_sip_to_tag: \"b66c6541\"\nVariable_sip_to_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_to_user: \"80001\"\nVariable_sip_user_agent: \"X-Lite release 4.9.1 stamp 78725\"\nVariable_sofia_profile_name: \"internal\"\nVariable_start_epoch: \"1457350471\"\nVariable_start_stamp: \"2016-03-07 19:34:31\"\nVariable_start_uepoch: \"1457350471574007\"\nVariable_uduration: \"5660065\"\nVariable_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_waitmsec: \"0\"\nVariable_waitsec: \"0\"\nVariable_waitusec: \"0\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"RINGING\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_CONSUME_MEDIA\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_hangup\"\nEvent-Calling-Line-Number: \"3239\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479674087\"\nEvent-Name: \"CHANNEL_HANGUP\"\nEvent-Sequence: \"17130\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_call_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_direction: \"outbound\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"26376\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457324095 1457324096 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 26376 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"78\"\nVariable_sip_call_id: \"6698140a-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_contact_host: \"10.0.10.8\"\nVariable_sip_contact_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_contact_port: \"51007\"\nVariable_sip_contact_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_contact_user: \"80001\"\nVariable_sip_cseq: \"88339171\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D9ac1aab6cc908b1b\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_from_tag: \"09j1X0p6Sp1mQ\"\nVariable_sip_from_uri: \"950598@10.0.0.35\"\nVariable_sip_from_user: \"950598\"\nVariable_sip_full_from: \"\\\"\\\" <sip:950598@10.0.0.35>;tag=09j1X0p6Sp1mQ\"\nVariable_sip_full_to: \"\\\"88006\\\" <sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b>;tag=4537ef53\"\nVariable_sip_full_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKN1ZUBa50Qa2Hr\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_recover_contact: \"<sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>\"\nVariable_sip_recover_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKN1ZUBa50Qa2Hr\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_display: \"88006\"\nVariable_sip_to_host: \"10.0.10.8\"\nVariable_sip_to_params: \"rinstance=9ac1aab6cc908b1b\"\nVariable_sip_to_port: \"51007\"\nVariable_sip_to_tag: \"4537ef53\"\nVariable_sip_to_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_to_user: \"80001\"\nVariable_sip_user_agent: \"X-Lite release 4.9.1 stamp 78725\"\nVariable_sofia_profile_name: \"internal\"\nVariable_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"0\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"RINGING\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479674087\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17131\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350479674087\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-State-Number: \"7\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"10\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_callstate\"\nEvent-Calling-Line-Number: \"285\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479674087\"\nEvent-Name: \"CHANNEL_CALLSTATE\"\nEvent-Sequence: \"17132\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nOriginal-Channel-Call-State: \"RINGING\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAlt_Event_Type: \"dialog\"\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350479674087\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_HANGUP\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_presence\"\nEvent-Calling-Line-Number: \"758\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479674087\"\nEvent-Name: \"PRESENCE_IN\"\nEvent-Sequence: \"17133\"\nEvent_Count: \"1\"\nEvent_Type: \"presence\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nFrom: \"80001@10.0.0.35\"\nHangup-Cause: \"USER_BUSY\"\nLogin: \"src/switch_channel.c\"\nPresence-Call-Direction: \"outbound\"\nPresence-Call-Info-State: \"idle\"\nPresence-Calling-File: \"src/switch_core_state_machine.c\"\nPresence-Calling-Function: \"check_presence\"\nPresence-Calling-Line: \"412\"\nProto: \"any\"\nRpid: \"unknown\"\nStatus: \"CS_HANGUP\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350479674087\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479674087\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17134\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nApi-Command: \"originate\"\nApi-Command-Argument: \"{ignore_early_media=true,origination_caller_id_number='950598'}user/'80001'@10.0.0.35 &bridge([origination_caller_id_number='950598']sofia/external/'910000'@10.0.0.61) Job-UUID:06513F3A3-534F-4389-A258-1B32F99750F0\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_loadable_module.c\"\nEvent-Calling-Function: \"switch_api_execute\"\nEvent-Calling-Line-Number: \"2424\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:31 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:31\"\nEvent-Date-Timestamp: \"1457350471554075\"\nEvent-Name: \"API\"\nEvent-Sequence: \"17088\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\n\nNew event\nContent-Length: \"15\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"mod_event_socket.c\"\nEvent-Calling-Function: \"api_exec\"\nEvent-Calling-Line-Number: \"1525\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479694006\"\nEvent-Name: \"BACKGROUND_JOB\"\nEvent-Sequence: \"17135\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nJob-Command: \"originate\"\nJob-Command-Arg: \"{ignore_early_media=true,origination_caller_id_number='950598'}user/'80001'@10.0.0.35 &bridge([origination_caller_id_number='950598']sofia/external/'910000'@10.0.0.61) Job-UUID:06513F3A3-534F-4389-A258-1B32F99750F0\"\nJob-Uuid: \"8f36442c-e458-11e5-8509-0d2b58eb5f11\"\nBODY: \"-ERR USER_BUSY\\n\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350477234072\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"12\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_session.c\"\nEvent-Calling-Function: \"switch_core_session_perform_destroy\"\nEvent-Calling-Line-Number: \"1474\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479694006\"\nEvent-Name: \"CHANNEL_DESTROY\"\nEvent-Sequence: \"17136\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_answer_epoch: \"0\"\nVariable_answer_uepoch: \"0\"\nVariable_answermsec: \"0\"\nVariable_answersec: \"0\"\nVariable_answerusec: \"0\"\nVariable_billmsec: \"0\"\nVariable_billsec: \"0\"\nVariable_billusec: \"0\"\nVariable_bridge_epoch: \"0\"\nVariable_bridge_uepoch: \"0\"\nVariable_call_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_caller_id: \"950598\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_digits_dialed: \"none\"\nVariable_direction: \"outbound\"\nVariable_duration: \"6\"\nVariable_end_epoch: \"1457350477\"\nVariable_end_stamp: \"2016-03-07 19:34:37\"\nVariable_end_uepoch: \"1457350477234072\"\nVariable_flow_billmsec: \"0\"\nVariable_flow_billsec: \"0\"\nVariable_flow_billusec: \"0\"\nVariable_hangup_cause: \"USER_BUSY\"\nVariable_hangup_cause_q850: \"17\"\nVariable_hold_accum_ms: \"0\"\nVariable_hold_accum_seconds: \"0\"\nVariable_hold_accum_usec: \"0\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_last_hold_epoch: \"0\"\nVariable_last_hold_uepoch: \"0\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"19710\"\nVariable_mduration: \"5660\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_profile_start_epoch: \"1457350471\"\nVariable_profile_start_stamp: \"2016-03-07 19:34:31\"\nVariable_profile_start_uepoch: \"1457350471574007\"\nVariable_progress_epoch: \"1457350471\"\nVariable_progress_media_epoch: \"0\"\nVariable_progress_media_uepoch: \"0\"\nVariable_progress_mediamsec: \"0\"\nVariable_progress_mediasec: \"0\"\nVariable_progress_mediausec: \"0\"\nVariable_progress_stamp: \"2016-03-07 19:34:31\"\nVariable_progress_uepoch: \"1457350471754069\"\nVariable_progressmsec: \"180\"\nVariable_progresssec: \"0\"\nVariable_progressusec: \"180062\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_resurrect_epoch: \"0\"\nVariable_resurrect_uepoch: \"0\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457330761 1457330762 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 19710 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"77\"\nVariable_sip_call_id: \"669763a8-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_contact_host: \"10.0.10.8\"\nVariable_sip_contact_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_contact_port: \"51007\"\nVariable_sip_contact_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_contact_user: \"80001\"\nVariable_sip_cseq: \"88339171\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D4cff3cd15e551efb\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_from_tag: \"Z0S8U552vDB2B\"\nVariable_sip_from_uri: \"950598@10.0.0.35\"\nVariable_sip_from_user: \"950598\"\nVariable_sip_full_from: \"\\\"\\\" <sip:950598@10.0.0.35>;tag=Z0S8U552vDB2B\"\nVariable_sip_full_to: \"\\\"88006\\\" <sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>;tag=b66c6541\"\nVariable_sip_full_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKmr629emXt1BZc\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_recover_contact: \"<sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>\"\nVariable_sip_recover_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKmr629emXt1BZc\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_display: \"88006\"\nVariable_sip_to_host: \"10.0.10.8\"\nVariable_sip_to_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_to_port: \"51007\"\nVariable_sip_to_tag: \"b66c6541\"\nVariable_sip_to_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_to_user: \"80001\"\nVariable_sip_user_agent: \"X-Lite release 4.9.1 stamp 78725\"\nVariable_sofia_profile_name: \"internal\"\nVariable_start_epoch: \"1457350471\"\nVariable_start_stamp: \"2016-03-07 19:34:31\"\nVariable_start_uepoch: \"1457350471574007\"\nVariable_uduration: \"5660065\"\nVariable_uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nVariable_waitmsec: \"0\"\nVariable_waitsec: \"0\"\nVariable_waitusec: \"0\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350477234072\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471754069\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_DESTROY\"\nChannel-State-Number: \"12\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479694006\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17137\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f389e20-e458-11e5-850d-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350472034051\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"12\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_session.c\"\nEvent-Calling-Function: \"switch_core_session_perform_destroy\"\nEvent-Calling-Line-Number: \"1474\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479694006\"\nEvent-Name: \"CHANNEL_DESTROY\"\nEvent-Sequence: \"17138\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_answer_epoch: \"0\"\nVariable_answer_uepoch: \"0\"\nVariable_answermsec: \"0\"\nVariable_answersec: \"0\"\nVariable_answerusec: \"0\"\nVariable_billmsec: \"0\"\nVariable_billsec: \"0\"\nVariable_billusec: \"0\"\nVariable_bridge_epoch: \"0\"\nVariable_bridge_uepoch: \"0\"\nVariable_call_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_caller_id: \"950598\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_digits_dialed: \"none\"\nVariable_direction: \"outbound\"\nVariable_duration: \"1\"\nVariable_end_epoch: \"1457350472\"\nVariable_end_stamp: \"2016-03-07 19:34:32\"\nVariable_end_uepoch: \"1457350472034051\"\nVariable_flow_billmsec: \"0\"\nVariable_flow_billsec: \"0\"\nVariable_flow_billusec: \"0\"\nVariable_hangup_cause: \"USER_BUSY\"\nVariable_hangup_cause_q850: \"17\"\nVariable_hold_accum_ms: \"0\"\nVariable_hold_accum_seconds: \"0\"\nVariable_hold_accum_usec: \"0\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_last_hold_epoch: \"0\"\nVariable_last_hold_uepoch: \"0\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"24502\"\nVariable_mduration: \"460\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_profile_start_epoch: \"1457350471\"\nVariable_profile_start_stamp: \"2016-03-07 19:34:31\"\nVariable_profile_start_uepoch: \"1457350471574007\"\nVariable_progress_epoch: \"0\"\nVariable_progress_media_epoch: \"0\"\nVariable_progress_media_uepoch: \"0\"\nVariable_progress_mediamsec: \"0\"\nVariable_progress_mediasec: \"0\"\nVariable_progress_mediausec: \"0\"\nVariable_progress_uepoch: \"0\"\nVariable_progressmsec: \"0\"\nVariable_progresssec: \"0\"\nVariable_progressusec: \"0\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_resurrect_epoch: \"0\"\nVariable_resurrect_uepoch: \"0\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457325969 1457325970 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 24502 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"79\"\nVariable_sip_call_id: \"6698ad7b-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=e25b97244836b6e9;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3De25b97244836b6e9\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=e25b97244836b6e9\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_host: \"10.0.10.8:51007\"\nVariable_sofia_profile_name: \"internal\"\nVariable_start_epoch: \"1457350471\"\nVariable_start_stamp: \"2016-03-07 19:34:31\"\nVariable_start_uepoch: \"1457350471574007\"\nVariable_uduration: \"460044\"\nVariable_uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nVariable_waitmsec: \"0\"\nVariable_waitsec: \"0\"\nVariable_waitusec: \"0\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350472034051\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"0\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_DESTROY\"\nChannel-State-Number: \"12\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479694006\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17139\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38d12e-e458-11e5-8513-0d2b58eb5f11\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350479674087\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"11\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_state_machine.c\"\nEvent-Calling-Function: \"switch_core_session_reporting_state\"\nEvent-Calling-Line-Number: \"834\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479714052\"\nEvent-Name: \"CHANNEL_HANGUP_COMPLETE\"\nEvent-Sequence: \"17140\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_answer_epoch: \"0\"\nVariable_answer_uepoch: \"0\"\nVariable_answermsec: \"0\"\nVariable_answersec: \"0\"\nVariable_answerusec: \"0\"\nVariable_billmsec: \"0\"\nVariable_billsec: \"0\"\nVariable_billusec: \"0\"\nVariable_bridge_epoch: \"0\"\nVariable_bridge_uepoch: \"0\"\nVariable_call_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_caller_id: \"950598\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_digits_dialed: \"none\"\nVariable_direction: \"outbound\"\nVariable_duration: \"8\"\nVariable_end_epoch: \"1457350479\"\nVariable_end_stamp: \"2016-03-07 19:34:39\"\nVariable_end_uepoch: \"1457350479674087\"\nVariable_flow_billmsec: \"0\"\nVariable_flow_billsec: \"0\"\nVariable_flow_billusec: \"0\"\nVariable_hangup_cause: \"USER_BUSY\"\nVariable_hangup_cause_q850: \"17\"\nVariable_hold_accum_ms: \"0\"\nVariable_hold_accum_seconds: \"0\"\nVariable_hold_accum_usec: \"0\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_last_hold_epoch: \"0\"\nVariable_last_hold_uepoch: \"0\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"26376\"\nVariable_mduration: \"8100\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_profile_start_epoch: \"1457350471\"\nVariable_profile_start_stamp: \"2016-03-07 19:34:31\"\nVariable_profile_start_uepoch: \"1457350471574007\"\nVariable_progress_epoch: \"1457350471\"\nVariable_progress_media_epoch: \"0\"\nVariable_progress_media_uepoch: \"0\"\nVariable_progress_mediamsec: \"0\"\nVariable_progress_mediasec: \"0\"\nVariable_progress_mediausec: \"0\"\nVariable_progress_stamp: \"2016-03-07 19:34:31\"\nVariable_progress_uepoch: \"1457350471914068\"\nVariable_progressmsec: \"340\"\nVariable_progresssec: \"0\"\nVariable_progressusec: \"340061\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_resurrect_epoch: \"0\"\nVariable_resurrect_uepoch: \"0\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457324095 1457324096 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 26376 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"78\"\nVariable_sip_call_id: \"6698140a-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_contact_host: \"10.0.10.8\"\nVariable_sip_contact_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_contact_port: \"51007\"\nVariable_sip_contact_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_contact_user: \"80001\"\nVariable_sip_cseq: \"88339171\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D9ac1aab6cc908b1b\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_from_tag: \"09j1X0p6Sp1mQ\"\nVariable_sip_from_uri: \"950598@10.0.0.35\"\nVariable_sip_from_user: \"950598\"\nVariable_sip_full_from: \"\\\"\\\" <sip:950598@10.0.0.35>;tag=09j1X0p6Sp1mQ\"\nVariable_sip_full_to: \"\\\"88006\\\" <sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b>;tag=4537ef53\"\nVariable_sip_full_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKN1ZUBa50Qa2Hr\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_recover_contact: \"<sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>\"\nVariable_sip_recover_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKN1ZUBa50Qa2Hr\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_display: \"88006\"\nVariable_sip_to_host: \"10.0.10.8\"\nVariable_sip_to_params: \"rinstance=9ac1aab6cc908b1b\"\nVariable_sip_to_port: \"51007\"\nVariable_sip_to_tag: \"4537ef53\"\nVariable_sip_to_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_to_user: \"80001\"\nVariable_sip_user_agent: \"X-Lite release 4.9.1 stamp 78725\"\nVariable_sofia_profile_name: \"internal\"\nVariable_start_epoch: \"1457350471\"\nVariable_start_stamp: \"2016-03-07 19:34:31\"\nVariable_start_uepoch: \"1457350471574007\"\nVariable_uduration: \"8100080\"\nVariable_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_waitmsec: \"0\"\nVariable_waitsec: \"0\"\nVariable_waitusec: \"0\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350479674087\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_REPORTING\"\nChannel-State-Number: \"12\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core_session.c\"\nEvent-Calling-Function: \"switch_core_session_perform_destroy\"\nEvent-Calling-Line-Number: \"1474\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479714052\"\nEvent-Name: \"CHANNEL_DESTROY\"\nEvent-Sequence: \"17141\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_advertised_media_ip: \"10.0.0.35\"\nVariable_answer_epoch: \"0\"\nVariable_answer_uepoch: \"0\"\nVariable_answermsec: \"0\"\nVariable_answersec: \"0\"\nVariable_answerusec: \"0\"\nVariable_billmsec: \"0\"\nVariable_billsec: \"0\"\nVariable_billusec: \"0\"\nVariable_bridge_epoch: \"0\"\nVariable_bridge_uepoch: \"0\"\nVariable_call_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_caller_id: \"950598\"\nVariable_channel_name: \"sofia/internal/80001@10.0.10.8:51007\"\nVariable_dialed_domain: \"10.0.0.35\"\nVariable_dialed_user: \"80001\"\nVariable_digits_dialed: \"none\"\nVariable_direction: \"outbound\"\nVariable_duration: \"8\"\nVariable_end_epoch: \"1457350479\"\nVariable_end_stamp: \"2016-03-07 19:34:39\"\nVariable_end_uepoch: \"1457350479674087\"\nVariable_flow_billmsec: \"0\"\nVariable_flow_billsec: \"0\"\nVariable_flow_billusec: \"0\"\nVariable_hangup_cause: \"USER_BUSY\"\nVariable_hangup_cause_q850: \"17\"\nVariable_hold_accum_ms: \"0\"\nVariable_hold_accum_seconds: \"0\"\nVariable_hold_accum_usec: \"0\"\nVariable_ignore_early_media: \"true\"\nVariable_is_outbound: \"true\"\nVariable_last_hold_epoch: \"0\"\nVariable_last_hold_uepoch: \"0\"\nVariable_local_media_ip: \"10.0.0.35\"\nVariable_local_media_port: \"26376\"\nVariable_mduration: \"8100\"\nVariable_originate_early_media: \"false\"\nVariable_origination_caller_id_number: \"950598\"\nVariable_presence_id: \"80001@10.0.0.35\"\nVariable_profile_start_epoch: \"1457350471\"\nVariable_profile_start_stamp: \"2016-03-07 19:34:31\"\nVariable_profile_start_uepoch: \"1457350471574007\"\nVariable_progress_epoch: \"1457350471\"\nVariable_progress_media_epoch: \"0\"\nVariable_progress_media_uepoch: \"0\"\nVariable_progress_mediamsec: \"0\"\nVariable_progress_mediasec: \"0\"\nVariable_progress_mediausec: \"0\"\nVariable_progress_stamp: \"2016-03-07 19:34:31\"\nVariable_progress_uepoch: \"1457350471914068\"\nVariable_progressmsec: \"340\"\nVariable_progresssec: \"0\"\nVariable_progressusec: \"340061\"\nVariable_proto_specific_hangup_cause: \"sip:486\"\nVariable_recovery_profile_name: \"internal\"\nVariable_resurrect_epoch: \"0\"\nVariable_resurrect_uepoch: \"0\"\nVariable_rtp_local_sdp_str: \"v=0\\no=FreeSWITCH 1457324095 1457324096 IN IP4 10.0.0.35\\ns=FreeSWITCH\\nc=IN IP4 10.0.0.35\\nt=0 0\\nm=audio 26376 RTP/AVP 9 0 8 3 101 13\\na=rtpmap:9 G722/8000\\na=rtpmap:0 PCMU/8000\\na=rtpmap:8 PCMA/8000\\na=rtpmap:3 GSM/8000\\na=rtpmap:101 telephone-event/8000\\na=fmtp:101 0-16\\na=ptime:20\\na=sendrecv\\n\"\nVariable_rtp_use_codec_string: \"G7221@32000h,G7221@16000h,G722,PCMU,PCMA,GSM\"\nVariable_session_id: \"78\"\nVariable_sip_call_id: \"6698140a-5efb-1234-0bb2-000c29b22457\"\nVariable_sip_contact_host: \"10.0.10.8\"\nVariable_sip_contact_params: \"rinstance=4cff3cd15e551efb\"\nVariable_sip_contact_port: \"51007\"\nVariable_sip_contact_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_contact_user: \"80001\"\nVariable_sip_cseq: \"88339171\"\nVariable_sip_destination_url: \"sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b;fs_nat=yes;fs_path=sip%3A80001%4010.0.10.8%3A51007%3Brinstance%3D9ac1aab6cc908b1b\"\nVariable_sip_from_host: \"10.0.0.35\"\nVariable_sip_from_tag: \"09j1X0p6Sp1mQ\"\nVariable_sip_from_uri: \"950598@10.0.0.35\"\nVariable_sip_from_user: \"950598\"\nVariable_sip_full_from: \"\\\"\\\" <sip:950598@10.0.0.35>;tag=09j1X0p6Sp1mQ\"\nVariable_sip_full_to: \"\\\"88006\\\" <sip:80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b>;tag=4537ef53\"\nVariable_sip_full_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKN1ZUBa50Qa2Hr\"\nVariable_sip_hangup_disposition: \"recv_refuse\"\nVariable_sip_invite_domain: \"10.0.0.35\"\nVariable_sip_local_network_addr: \"10.0.0.35\"\nVariable_sip_nat_detected: \"true\"\nVariable_sip_network_ip: \"10.0.10.8\"\nVariable_sip_network_port: \"51007\"\nVariable_sip_outgoing_contact_uri: \"<sip:mod_sofia@10.0.0.35:5060>\"\nVariable_sip_profile_name: \"internal\"\nVariable_sip_recover_contact: \"<sip:80001@10.0.10.8:51007;rinstance=4cff3cd15e551efb>\"\nVariable_sip_recover_via: \"SIP/2.0/UDP 10.0.0.35;rport=5060;branch=z9hG4bKN1ZUBa50Qa2Hr\"\nVariable_sip_reply_host: \"10.0.10.8\"\nVariable_sip_reply_port: \"51007\"\nVariable_sip_req_uri: \"80001@10.0.10.8:51007;rinstance=9ac1aab6cc908b1b\"\nVariable_sip_term_cause: \"17\"\nVariable_sip_term_status: \"486\"\nVariable_sip_to_display: \"88006\"\nVariable_sip_to_host: \"10.0.10.8\"\nVariable_sip_to_params: \"rinstance=9ac1aab6cc908b1b\"\nVariable_sip_to_port: \"51007\"\nVariable_sip_to_tag: \"4537ef53\"\nVariable_sip_to_uri: \"80001@10.0.10.8:51007\"\nVariable_sip_to_user: \"80001\"\nVariable_sip_user_agent: \"X-Lite release 4.9.1 stamp 78725\"\nVariable_sofia_profile_name: \"internal\"\nVariable_start_epoch: \"1457350471\"\nVariable_start_stamp: \"2016-03-07 19:34:31\"\nVariable_start_uepoch: \"1457350471574007\"\nVariable_uduration: \"8100080\"\nVariable_uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nVariable_waitmsec: \"0\"\nVariable_waitsec: \"0\"\nVariable_waitusec: \"0\"\n\nNew event\nAnswer-State: \"hangup\"\nCall-Direction: \"outbound\"\nCaller-Ani: \"950598\"\nCaller-Callee-Id-Name: \"Outbound Call\"\nCaller-Callee-Id-Number: \"80001\"\nCaller-Caller-Id-Number: \"950598\"\nCaller-Channel-Answered-Time: \"0\"\nCaller-Channel-Bridged-Time: \"0\"\nCaller-Channel-Created-Time: \"1457350471574007\"\nCaller-Channel-Hangup-Time: \"1457350479674087\"\nCaller-Channel-Hold-Accum: \"0\"\nCaller-Channel-Last-Hold: \"0\"\nCaller-Channel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nCaller-Channel-Progress-Media-Time: \"0\"\nCaller-Channel-Progress-Time: \"1457350471914068\"\nCaller-Channel-Resurrect-Time: \"0\"\nCaller-Channel-Transfer-Time: \"0\"\nCaller-Context: \"default\"\nCaller-Destination-Number: \"80001\"\nCaller-Direction: \"outbound\"\nCaller-Logical-Direction: \"outbound\"\nCaller-Network-Addr: \"10.0.10.8\"\nCaller-Orig-Caller-Id-Number: \"950598\"\nCaller-Privacy-Hide-Name: \"false\"\nCaller-Privacy-Hide-Number: \"false\"\nCaller-Profile-Created-Time: \"1457350471574007\"\nCaller-Profile-Index: \"1\"\nCaller-Screen-Bit: \"true\"\nCaller-Source: \"src/switch_ivr_originate.c\"\nCaller-Unique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Call-State: \"HANGUP\"\nChannel-Call-Uuid: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\nChannel-Hit-Dialplan: \"false\"\nChannel-Name: \"sofia/internal/80001@10.0.10.8:51007\"\nChannel-Presence-Id: \"80001@10.0.0.35\"\nChannel-State: \"CS_DESTROY\"\nChannel-State-Number: \"12\"\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_channel.c\"\nEvent-Calling-Function: \"switch_channel_perform_set_running_state\"\nEvent-Calling-Line-Number: \"2215\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:39 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:39\"\nEvent-Date-Timestamp: \"1457350479714052\"\nEvent-Name: \"CHANNEL_STATE\"\nEvent-Sequence: \"17142\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nHangup-Cause: \"USER_BUSY\"\nPresence-Call-Direction: \"outbound\"\nUnique-Id: \"8f38b8ba-e458-11e5-8510-0d2b58eb5f11\"\n\nNew event\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core.c\"\nEvent-Calling-Function: \"send_heartbeat\"\nEvent-Calling-Line-Number: \"73\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:43 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:43\"\nEvent-Date-Timestamp: \"1457350483434002\"\nEvent-Info: \"System Ready\"\nEvent-Name: \"HEARTBEAT\"\nEvent-Sequence: \"17143\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nFreeswitch-Version: \"1.4.26+git~20160119T163808Z~c1a3a280c2~64bit\"\nIdle-Cpu: \"98.533333\"\nMax-Sessions: \"1000\"\nSession-Count: \"0\"\nSession-Peak-Fivemin: \"3\"\nSession-Peak-Max: \"4\"\nSession-Per-Sec: \"30\"\nSession-Per-Sec-Fivemin: \"3\"\nSession-Per-Sec-Max: \"3\"\nSession-Since-Startup: \"79\"\nUp-Time: \"0 years, 1 day, 9 hours, 22 minutes, 20 seconds, 75 milliseconds, 512 microseconds\"\nUptime-Msec: \"120140075\"\n\nNew event\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_scheduler.c\"\nEvent-Calling-Function: \"switch_scheduler_execute\"\nEvent-Calling-Line-Number: \"71\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:34:43 GMT\"\nEvent-Date-Local: \"2016-03-07 19:34:43\"\nEvent-Date-Timestamp: \"1457350483434002\"\nEvent-Name: \"RE_SCHEDULE\"\nEvent-Sequence: \"17144\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nTask-Desc: \"heartbeat\"\nTask-Group: \"core\"\nTask-Id: \"1\"\nTask-Runtime: \"1457350503\"\n\nNew event\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_core.c\"\nEvent-Calling-Function: \"send_heartbeat\"\nEvent-Calling-Line-Number: \"73\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:35:03 GMT\"\nEvent-Date-Local: \"2016-03-07 19:35:03\"\nEvent-Date-Timestamp: \"1457350503434093\"\nEvent-Info: \"System Ready\"\nEvent-Name: \"HEARTBEAT\"\nEvent-Sequence: \"17145\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nFreeswitch-Version: \"1.4.26+git~20160119T163808Z~c1a3a280c2~64bit\"\nIdle-Cpu: \"98.900000\"\nMax-Sessions: \"1000\"\nSession-Count: \"0\"\nSession-Peak-Fivemin: \"3\"\nSession-Peak-Max: \"4\"\nSession-Per-Sec: \"30\"\nSession-Per-Sec-Fivemin: \"3\"\nSession-Per-Sec-Max: \"3\"\nSession-Since-Startup: \"79\"\nUp-Time: \"0 years, 1 day, 9 hours, 22 minutes, 40 seconds, 80 milliseconds, 954 microseconds\"\nUptime-Msec: \"120160081\"\n\nNew event\nCore-Uuid: \"dd3a5780-e340-11e5-82d6-0d2b58eb5f11\"\nEvent-Calling-File: \"switch_scheduler.c\"\nEvent-Calling-Function: \"switch_scheduler_execute\"\nEvent-Calling-Line-Number: \"71\"\nEvent-Date-Gmt: \"Mon, 07 Mar 2016 11:35:03 GMT\"\nEvent-Date-Local: \"2016-03-07 19:35:03\"\nEvent-Date-Timestamp: \"1457350503434093\"\nEvent-Name: \"RE_SCHEDULE\"\nEvent-Sequence: \"17146\"\nFreeswitch-Hostname: \"localhost.localdomain\"\nFreeswitch-Ipv4: \"10.0.0.35\"\nFreeswitch-Ipv6: \"::1\"\nFreeswitch-Switchname: \"localhost.localdomain\"\nTask-Desc: \"heartbeat\"\nTask-Group: \"core\"\nTask-Id: \"1\"\nTask-Runtime: \"1457350523\"\n\n\n\n8f36442c-e458-11e5-8509-0d2b58eb5f11",
 			"sTRING()",
 			"BODY",
 			"dUMP",
@@ -429,65 +539,11 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 14,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/main/main.go",
-					"settings":
-					{
-						"buffer_size": 3342,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3242,
-								3242
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1226.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/dbhandler/recordinfo.go",
-					"settings":
-					{
-						"buffer_size": 656,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								467,
-								467
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "src/dbhandler/mysqlhandler.go",
 					"settings":
 					{
@@ -514,7 +570,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "build.sh",
 					"settings":
 					{
@@ -525,8 +581,8 @@
 						"selection":
 						[
 							[
-								136,
-								136
+								20,
+								20
 							]
 						],
 						"settings":
@@ -540,19 +596,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "src/goesl/message.go",
 					"settings":
 					{
-						"buffer_size": 4814,
+						"buffer_size": 4555,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4541,
-								4551
+								4523,
+								4526
 							]
 						],
 						"settings":
@@ -561,72 +617,17 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 357.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "src/goesl/examples/client.go",
 					"settings":
 					{
 						"buffer_size": 1852,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1390,
-								1420
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 349.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/main/fscti.go",
-					"settings":
-					{
-						"buffer_size": 1605,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1166,
-								1169
-							]
-						],
-						"settings":
-						{
-							"auto_name": "package",
-							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 612.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/farrell/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/liukaijin@china95059.com/Mail/31/5/2909163479798066149.attachment/ESL/ESLproject/src/myfscallhandlertest.java",
-					"settings":
-					{
-						"buffer_size": 2322,
 						"regions":
 						{
 						},
@@ -639,17 +640,45 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Java/Java.tmLanguage",
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 369.0,
+						"translation.y": 335.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 4,
+					"file": "src/main/fscti.go",
+					"settings":
+					{
+						"buffer_size": 3194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"auto_name": "package",
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 83.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "/Users/farrell/Projects/CDRServer/CDRServer/bin/Debug/call_fs.py",
 					"settings":
 					{
@@ -671,71 +700,17 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 125.0,
+						"translation.y": 118.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 6,
 					"file": "src/goesl/client.go",
 					"settings":
 					{
-						"buffer_size": 2701,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2351,
-								2351
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 568.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/goesl/connection.go",
-					"settings":
-					{
-						"buffer_size": 4234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3415,
-								3426
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1748.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "src/goesl/helpers.go",
-					"settings":
-					{
-						"buffer_size": 2022,
+						"buffer_size": 2702,
 						"regions":
 						{
 						},
@@ -752,7 +727,224 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 219.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/goesl/connection.go",
+					"settings":
+					{
+						"buffer_size": 4234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3745,
+								3768
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/main/main.go",
+					"settings":
+					{
+						"buffer_size": 4594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4017,
+								4017
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1962.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/eventsocket/eventsocket.go",
+					"settings":
+					{
+						"buffer_size": 11511,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7014,
+								7014
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/farrell/Downloads/switch.conf.xml",
+					"settings":
+					{
+						"buffer_size": 7107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7075,
+								6895
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1874.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/farrell/Downloads/switch.conf1.xml",
+					"settings":
+					{
+						"buffer_size": 7522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2084.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/dbhandler/recordinfo.go",
+					"settings":
+					{
+						"buffer_size": 656,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								655,
+								655
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/main/config.json",
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								132
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{\"BindIp\":\"192.168.1.103\",",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/main/config.go",
+					"settings":
+					{
+						"buffer_size": 1760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 50.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -823,6 +1015,10 @@
 	{
 		"height": 100.0
 	},
+	"output.9o:///Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/goesl":
+	{
+		"height": 100.0
+	},
 	"output.9o:///Users/farrell/Documents/GOLang/src/RecordQuerySvr/src/main":
 	{
 		"height": 100.0
@@ -868,6 +1064,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 217.0,
+	"side_bar_width": 208.0,
 	"status_bar_visible": true
 }

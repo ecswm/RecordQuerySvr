@@ -11,6 +11,8 @@ export GOPATH="$CURDIR"
 
 go build main
 
+./main
+
 export GOPATH="$OLDGOPATH"
 
 echo 'finished'
