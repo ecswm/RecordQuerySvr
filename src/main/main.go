@@ -77,11 +77,11 @@ func queryrecording(rw http.ResponseWriter, req *http.Request) {
 }
 
 func doublecall(rw http.ResponseWriter, req *http.Request) {
-	fmt.Println("doublecall request, the request info is ", req.URL.Path)
+	fmt.Println("doublecall request, the request info is:", req.URL.Path)
 	err := req.ParseForm()
 
 	if err != nil {
-		fmt.Println("parseform error is : ", err.Error())
+		fmt.Println("parse doublecall request error is: ", err.Error())
 		return
 	}
 
@@ -91,20 +91,22 @@ func doublecall(rw http.ResponseWriter, req *http.Request) {
 		sigparams     string
 		authorization string
 	)
-
 	if req.Method == "POST" {
 		caller_number, called_number = req.PostFormValue("Caller_number"), req.PostFormValue("Called_number")
-		sigparams = req.FormValue("SigParameter")
-		authorization = req.Header.Get("Authorization")
-	}
 
+	}
+	if req.Method == "GET"{
+		caller_number,called_number = req.FormValue("Caller_number"),req.FormValue("Called_number")
+	}
+	sigparams = req.FormValue("SigParameter")
+	authorization = req.Header.Get("Authorization")
 	fmt.Println(fmt.Sprintf("parseform doublecall data is {caller_number: %s, called_number: %s, sigs: %s}", caller_number, called_number, sigparams))
 
 	var (
-		name string
+		user string
 		ret  bool
 	)
-	if name, ret = config.DecodeSigParams(sigparams, authorization); ret == false {
+	if user, ret = config.DecodeSigParams(sigparams, authorization); ret == false {
 		//检验未通过
 		rw.Header().Set("content-type", "text/plain")
 		rw.WriteHeader(http.StatusForbidden)
@@ -112,17 +114,19 @@ func doublecall(rw http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	app := DoubleCallApp{
-		Request:  &DoubleCallAppReq{Ani: config.GetUserAni(name), CallerNumber: caller_number, CalledNumber: called_number},
-		Response: make(chan *DoubleCallAppRsp),
+	app := DoubleCallApp{CallerNumber:caller_number,CalledNumber:called_number}
+	app.CallApp = CallApp{AppName:"doublecall",
+		CustomerName:user,
+		Ani:config.GetUserAni(user),
+		PushResultUrl:"",
+		Response: make(chan *CallAppRsp),
 		Job_Uuid: make(chan string),
 		Err:      make(chan error)}
-
 	fsclient.PushAppRequest(&app)
 
 	rw.Header().Set("content-type", "application/json")
 	var (
-		doublecallrsp *DoubleCallAppRsp
+		callrsp *CallAppRsp
 		job_uuid      string
 	)
 	select {
@@ -130,31 +134,101 @@ func doublecall(rw http.ResponseWriter, req *http.Request) {
 		rw.Write([]byte(err.Error()))
 	case job_uuid = <-app.Job_Uuid:
 		rw.Write([]byte(job_uuid))
-	case <-time.After(time.Second * 20):
+	case <-time.After(time.Second * 100):
 		rw.Write([]byte("RequestTimeout"))
-	case doublecallrsp = <-app.Response:
-		if retjson, err := doublecallrsp.GenerateRspJson(); err == nil {
+	case callrsp = <-app.Response:
+		if retjson, err := callrsp.GenerateRspJson(); err == nil {
 			rw.Write([]byte(retjson))
 		}
 	}
 }
 
-func initserver(url string) {
-	fmt.Println("begin queryrecordsvr,listen url is", url)
-	err := dbhandler.NewDB("10.0.0.33", 3306, "root", "lvcheng2015~", "fs")
-	if err != nil {
-		fmt.Println("connect to fs database error: ", err.Error())
+
+func voiceidentcall(rw http.ResponseWriter, req *http.Request)  {
+	fmt.Println("voiceidentcall request,the request info is:",req.URL.Path)
+	err:=req.ParseForm()
+
+	if err!=nil{
+		fmt.Println("parse voiceidentcall request error is:",err.Error())
+		return
 	}
+
+	var(
+		called_number string
+		ident_code string
+		sigparams	string
+		authorization string
+	)
+	if req.Method == "POST"{
+		called_number,ident_code = req.PostFormValue("Called_number"), req.PostFormValue("ident_code")
+	}
+	if req.Method == "GET"{
+		called_number,ident_code = req.FormValue("called_number"),req.FormValue("ident_code")
+	}
+	sigparams = req.FormValue("SigParameter")
+	authorization = req.FormValue("Authorization")
+	fmt.Println(fmt.Sprintf("parseform voiceident data is {called_number: %s, ident_code: %s, sigs: %s}", called_number, ident_code, sigparams))
+
+	var (
+		user string
+		ret  bool
+	)
+	if user, ret = config.DecodeSigParams(sigparams, authorization); ret == false {
+		//检验未通过
+		rw.Header().Set("content-type", "text/plain")
+		rw.WriteHeader(http.StatusForbidden)
+		rw.Write([]byte("invalid user"))
+		return
+	}
+
+	app := VoiceIdentCallApp{IdentCode:ident_code,CalledNumber:called_number}
+	app.CallApp = CallApp{AppName:"voiceidentcall",
+		CustomerName:user,
+		Ani:config.GetUserAni(user),
+		PushResultUrl:"",
+		Response: make(chan *CallAppRsp),
+		Job_Uuid: make(chan string),
+		Err:      make(chan error)}
+	fsclient.PushAppRequest(&app)
+
+	rw.Header().Set("content-type", "application/json")
+	var (
+		callrsp *CallAppRsp
+		job_uuid      string
+	)
+	select {
+	case err = <-app.Err:
+		rw.Write([]byte(err.Error()))
+	case job_uuid = <-app.Job_Uuid:
+		rw.Write([]byte(job_uuid))
+	case <-time.After(time.Second * 100):
+		rw.Write([]byte("RequestTimeout"))
+	case callrsp = <-app.Response:
+		if retjson, err := callrsp.GenerateRspJson(); err == nil {
+			rw.Write([]byte(retjson))
+		}
+	}
+
+}
+
+
+func initserver(url string) {
+	fmt.Println("begin fsappsvr,listen url is", url)
 	http.HandleFunc("/insertrecording", insertrecording)
 	http.HandleFunc("/queryrecording", queryrecording)
 	http.HandleFunc("/doublecall/", doublecall)
+	http.HandleFunc("/voiceidentcall/",voiceidentcall)
 	fmt.Println(http.ListenAndServe(url, nil))
 }
 
 func main() {
-	var err error
 	config = NewConfigEx("./config.json")
-	fsclient, err = ConnectFs2()
+	err := dbhandler.NewDB(config.GetDBConnectString())
+	if err != nil {
+		fmt.Println("connect to fs database error: ", err.Error())
+		os.Exit(0)
+	}
+	fsclient, err = ConnectFs()
 	if err == nil {
 		fsclient.Connection.Send("events json ALL")
 		go fsclient.PopAppRequest()

@@ -5,6 +5,7 @@ import (
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
+	"time"
 )
 
 type DBObj struct {
@@ -13,9 +14,8 @@ type DBObj struct {
 
 var DbObj *DBObj
 
-func NewDB(ip string, port uint, user string, password string, dbname string) error {
-	connectstring := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", user, password, ip, port, dbname)
-	dbobj := new(DBObj)
+func NewDB(connectstring string) error {
+	DbObj = new(DBObj)
 	db, err := sql.Open("mysql", connectstring)
 	if err != nil {
 		fmt.Println("database initialize %s, connect_string is error : ", connectstring, err.Error())
@@ -27,8 +27,10 @@ func NewDB(ip string, port uint, user string, password string, dbname string) er
 		fmt.Println("database ping is error : ", err.Error())
 		db.Close()
 		log.Fatal(err)
+		return err
 	}
-	dbobj.db = db
+	fmt.Println("connect database success")
+	DbObj.db = db
 	return nil
 }
 
@@ -40,7 +42,7 @@ func (this *DBObj) CloseDB() error {
 func (this *DBObj) QueryRecordingPath(callid string) (string, error) {
 	var recordingpath string = ""
 	fmt.Println("query recordinginfo, call_id is ", callid)
-	err := this.db.QueryRow("SELECT record_path FROM call_record WHERE call_id = ?", callid).Scan(&recordingpath)
+	err := this.db.QueryRow(qryrecscript, callid).Scan(&recordingpath)
 	if err != nil {
 		fmt.Println("query recordinginfo error : ", err.Error())
 	}
@@ -49,7 +51,7 @@ func (this *DBObj) QueryRecordingPath(callid string) (string, error) {
 
 func (this *DBObj) InsertRecordingInfo(recordinginfo RecordingInfo) (bool, error) {
 	ret := false
-	stmtIns, err := this.db.Prepare("INSERT INTO call_record(call_id,record_path,record_time,caller_number,called_number) VALUES(?,?,?,?,?)")
+	stmtIns, err := this.db.Prepare(createrecscript)
 	defer stmtIns.Close()
 
 	if err == nil {
@@ -68,8 +70,45 @@ func (this *DBObj) InsertRecordingInfo(recordinginfo RecordingInfo) (bool, error
 	return ret, err
 }
 
+//创建一个job信息
+func (this *DBObj) CreateJobInfo(jobid string,customer string,appname string)(bool,error){
+	ret:=true
+	stmtIns,err:= this.db.Prepare(createjobscript)
+	defer stmtIns.Close()
+
+	if err == nil{
+		_,err = stmtIns.Exec(jobid,
+				customer,
+				appname,
+				time.Now().Format("2006-01-02 15:04:05"),
+		)
+		if err != nil{
+			fmt.Println("create jobinfo error : ",err.Error())
+			ret = false
+		}
+	}
+	return ret,err
+}
+
+//更新一个job信息
+func (this *DBObj) UpdateJobInfo (jobid string,callid string,result string)(bool,error){
+	ret:= true
+	stmtIns,err:= this.db.Prepare(updatejobscript)
+	defer stmtIns.Close()
+
+	if err == nil{
+		_,err = stmtIns.Exec(callid,result,jobid)
+		if err != nil{
+			fmt.Println("update jobinfo error :",err.Error())
+			ret = false
+		}
+	}
+	return ret,err
+
+}
+
 func (this *DBObj) DelRecordingInfo(callid string) {
-	stmt, err := this.db.Prepare("DELETE FROM call_record WHERE call_id =?")
+	stmt, err := this.db.Prepare(delrecscript)
 	defer stmt.Close()
 
 	if err != nil {

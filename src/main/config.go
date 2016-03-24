@@ -17,6 +17,7 @@ type Configuration interface {
 	GetEslUrl() string
 	GetEslPwd() string
 	DecodeSigParams(sigparams string, authorization string) (string, bool)
+	GetDBConnectString() string
 }
 
 /*
@@ -52,6 +53,11 @@ type configuration struct {
 	FsPort      uint
 	Password    string
 	Timeout     uint
+	DBHost      string
+	DBPort	    uint
+	DBName	    string
+	DBUser	    string
+	DBPwd	    string
 	SupportApps []string
 	Users       []userinfo
 }
@@ -77,6 +83,9 @@ func (this configuration) GetEslPwd() string {
 	return this.Password
 }
 
+func (this configuration) GetDBConnectString() string{
+	return fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", this.DBUser, this.DBPwd, this.DBHost, this.DBPort, this.DBName)
+}
 /*
 从key.ini中获取user/key信息
 */
@@ -93,6 +102,7 @@ func NewConfigEx(path string) Configuration {
 	err = decoder.Decode(&config)
 
 	if err != nil {
+		fmt.Println("parse config.json err,cause:",err.Error())
 		return nil
 	}
 	return config
@@ -118,6 +128,7 @@ func (this configuration) DecodeSigParams(sigparams string, authorization string
 				md5hash := md5Ctx.Sum(nil)
 				if strings.ToUpper(hex.EncodeToString(md5hash)) == sigparams {
 					ret = true
+					break
 				}
 			}
 		}
