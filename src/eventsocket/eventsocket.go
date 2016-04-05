@@ -109,6 +109,7 @@ func Dial(addr, passwd string) (*Connection, error) {
 		return nil, err
 	}
 	if m.Get("Content-Type") != "auth/request" {
+		fmt.Println(m.Get("Content-Type"))
 		c.Close()
 		return nil, errMissingAuthRequest
 	}
@@ -202,6 +203,7 @@ func (h *Connection) readOne() bool {
 		h.evt <- resp
 	case "text/event-json":
 		tmp := make(EventHeader)
+
 		err := json.Unmarshal([]byte(resp.Body), &tmp)
 		if err != nil {
 			h.err <- err
@@ -211,8 +213,17 @@ func (h *Connection) readOne() bool {
 		for k, v := range tmp {
 			resp.Header[capitalize(k)] = v
 		}
-		if v, _ := resp.Header["_body"]; v != "" {
-			resp.Body = v
+		//if v, _ := resp.Header["_body"]; v != "" {
+		//	resp.Body = v
+		if v, _ := resp.Header["_body"]; v != nil {
+			switch vv := v.(type) {
+			case string:
+				resp.Body = vv
+			case int:
+				resp.Body = string(vv)
+			default:
+				resp.Body = ""
+			}
 			delete(resp.Header, "_body")
 		} else {
 			resp.Body = ""
@@ -310,7 +321,7 @@ func capitalize(s string) string {
 func (h *Connection) Send(command string) (*Event, error) {
 	// Sanity check to avoid breaking the parser
 	if strings.IndexAny(command, "\r\n") > 0 {
-		return nil, errInvalidCommand
+		//return nil, errInvalidCommand
 	}
 	fmt.Fprintf(h.conn, "%s\r\n\r\n", command)
 	var (
@@ -428,7 +439,7 @@ func (h *Connection) ExecuteUUID(uuid, appName, appArg string) (*Event, error) {
 }
 
 // EventHeader represents events as a pair of key:value.
-type EventHeader map[string]string
+type EventHeader map[string]interface{}
 
 // Event represents a FreeSWITCH event.
 type Event struct {
@@ -446,13 +457,13 @@ func (r *Event) String() string {
 
 // Get returns an Event value, or "" if the key doesn't exist.
 func (r *Event) Get(key string) string {
-	return r.Header[key]
+	return r.Header[key].(string)
 }
 
 // GetInt returns an Event value converted to int, or an error if conversion
 // is not possible.
 func (r *Event) GetInt(key string) (int, error) {
-	n, err := strconv.Atoi(r.Header[key])
+	n, err := strconv.Atoi(r.Header[key].(string))
 	if err != nil {
 		return 0, err
 	}

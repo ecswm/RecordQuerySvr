@@ -271,7 +271,7 @@
 			"file": "build.sh",
 			"settings":
 			{
-				"buffer_size": 215,
+				"buffer_size": 223,
 				"line_ending": "Unix"
 			}
 		},
@@ -279,7 +279,7 @@
 			"file": "src/goesl/message.go",
 			"settings":
 			{
-				"buffer_size": 4555,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -287,7 +287,7 @@
 			"file": "src/goesl/examples/client.go",
 			"settings":
 			{
-				"buffer_size": 1852,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -295,7 +295,7 @@
 			"file": "src/main/fscti.go",
 			"settings":
 			{
-				"buffer_size": 3194,
+				"buffer_size": 3170,
 				"line_ending": "Unix",
 				"name": "package"
 			}
@@ -312,7 +312,7 @@
 			"file": "src/goesl/client.go",
 			"settings":
 			{
-				"buffer_size": 2702,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -320,7 +320,7 @@
 			"file": "src/goesl/connection.go",
 			"settings":
 			{
-				"buffer_size": 4234,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -328,7 +328,7 @@
 			"file": "src/main/main.go",
 			"settings":
 			{
-				"buffer_size": 4594,
+				"buffer_size": 4689,
 				"line_ending": "Unix"
 			}
 		},
@@ -365,10 +365,13 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "src/main/config.json",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
-				"buffer_size": 357,
+				"buffer_size": 0,
 				"line_ending": "Unix",
 				"name": "{\"BindIp\":\"192.168.1.103\","
 			}
@@ -377,7 +380,7 @@
 			"file": "src/main/config.go",
 			"settings":
 			{
-				"buffer_size": 1760,
+				"buffer_size": 2430,
 				"line_ending": "Unix"
 			}
 		}
@@ -539,7 +542,7 @@
 	"groups":
 	[
 		{
-			"selected": 14,
+			"selected": 13,
 			"sheets":
 			[
 				{
@@ -574,15 +577,15 @@
 					"file": "build.sh",
 					"settings":
 					{
-						"buffer_size": 215,
+						"buffer_size": 223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20,
-								20
+								0,
+								0
 							]
 						],
 						"settings":
@@ -600,15 +603,15 @@
 					"file": "src/goesl/message.go",
 					"settings":
 					{
-						"buffer_size": 4555,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4523,
-								4526
+								0,
+								0
 							]
 						],
 						"settings":
@@ -627,7 +630,7 @@
 					"file": "src/goesl/examples/client.go",
 					"settings":
 					{
-						"buffer_size": 1852,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -644,7 +647,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 335.0,
+						"translation.y": 63.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -654,15 +657,15 @@
 					"file": "src/main/fscti.go",
 					"settings":
 					{
-						"buffer_size": 3194,
+						"buffer_size": 3170,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								299,
-								299
+								1164,
+								1164
 							]
 						],
 						"settings":
@@ -672,7 +675,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 83.0,
+						"translation.y": 803.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -710,7 +713,7 @@
 					"file": "src/goesl/client.go",
 					"settings":
 					{
-						"buffer_size": 2702,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -737,15 +740,15 @@
 					"file": "src/goesl/connection.go",
 					"settings":
 					{
-						"buffer_size": 4234,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3745,
-								3768
+								0,
+								0
 							]
 						],
 						"settings":
@@ -764,15 +767,15 @@
 					"file": "src/main/main.go",
 					"settings":
 					{
-						"buffer_size": 4594,
+						"buffer_size": 4689,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4017,
-								4017
+								0,
+								0
 							]
 						],
 						"settings":
@@ -808,7 +811,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 198.0,
+						"translation.y": 508.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -900,15 +903,15 @@
 					"file": "src/main/config.json",
 					"settings":
 					{
-						"buffer_size": 357,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								132,
-								132
+								0,
+								0
 							]
 						],
 						"settings":
@@ -927,7 +930,7 @@
 					"file": "src/main/config.go",
 					"settings":
 					{
-						"buffer_size": 1760,
+						"buffer_size": 2430,
 						"regions":
 						{
 						},
@@ -944,7 +947,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 50.0,
+						"translation.y": 290.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

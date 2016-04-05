@@ -13,6 +13,7 @@ import (
 
 type Configuration interface {
 	GetUserAni(string) string
+	GetUserPrefix(string) string
 	GetListenUrl() string
 	GetEslUrl() string
 	GetEslPwd() string
@@ -24,6 +25,7 @@ type Configuration interface {
 主叫,名字,密钥
 */
 type userinfo struct {
+	Prefix string
 	Ani  string
 	Name string
 	Key  string
@@ -71,6 +73,14 @@ func (this configuration) GetUserAni(name string) string {
 	return "95059"
 }
 
+func (this configuration) GetUserPrefix(name string) string{
+	for _, user := range this.Users {
+		if user.Name == name {
+			return user.Prefix
+		}
+	}
+	return "9"
+}
 func (this configuration) GetListenUrl() string {
 	return fmt.Sprintf("%s:%d", this.BindIp, this.BindPort)
 }

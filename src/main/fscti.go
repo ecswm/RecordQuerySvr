@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 	"dbhandler"
+	"github.com/satori/go.uuid"
 )
 
 var (
@@ -45,6 +46,7 @@ type CallApp struct {
 	CustomerName  string
 	PushResultUrl string
 	AppName       string
+	Prefix        string
 }
 /*
 双呼响应
@@ -70,6 +72,7 @@ type FsClient struct {
 	*eventsocket.Connection
 	Apps chan  interface{}
 	Msg  map[string]interface{}
+	Completed	chan bool
 }
 
 /*
@@ -82,7 +85,8 @@ func ConnectFs() (*FsClient, error) {
 	}
 	fsclient := FsClient{
 		Apps: make(chan interface{}, buffsize),
-		Msg:  make(map[string]interface{})}
+		Msg:  make(map[string]interface{}),
+		Completed:make(chan bool)}
 	fsclient.Connection = c
 	return &fsclient, err
 }
@@ -97,55 +101,105 @@ func (c *FsClient) PushAppRequest(app interface{}) {
 func (c *FsClient) PopAppRequest() {
 	for {
 		var app interface{}
-		var(
-			jobid string
+		var (
 			err error
 		)
-
 		select {
 		case app = <-c.Apps:
+			jobid := fmt.Sprintf("%s",uuid.NewV4())
+			c.Msg[jobid] = app
 			switch app.(type) {
 			case *DoubleCallApp:
-				jobid, err = c.SendDoubleCall(app)
-				dbhandler.DbObj.CreateJobInfo(jobid, app.(*DoubleCallApp).CustomerName, app.(*DoubleCallApp).AppName)
+				err = c.SendDoubleCall(app,jobid)
+				dbhandler.DbObj.CreateJobInfo(jobid,app.(*DoubleCallApp).CustomerName, app.(*DoubleCallApp).AppName)
 				if err != nil {
 					app.(*DoubleCallApp).Err <- err
-					continue
 				}
+				//c.Completed <- true
 			case *VoiceIdentCallApp:
-				jobid,err = c.SendVoiceIdentCall(app)
-				dbhandler.DbObj.CreateJobInfo(jobid,app.(*VoiceIdentCallApp).CustomerName,app.(*VoiceIdentCallApp).AppName)
+				err = c.SendVoiceIdentCall(app,jobid)
+				dbhandler.DbObj.CreateJobInfo(jobid, app.(*VoiceIdentCallApp).CustomerName, app.(*VoiceIdentCallApp).AppName)
 				if err != nil {
 					app.(*VoiceIdentCallApp).Err <- err
-					continue
 				}
+				//c.Completed <- true
 			}
-			c.Msg[jobid] = app
 		}
 	}
 }
 
-func DoubleCallCmd(caller_number string,called_number string,ani string) string{
-	return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}sofia/external/'%s'@10.0.0.61 '&lua('/usr/local/freeswitch/scripts/LXHealthCare/main.lua' %s %s)'", ani, caller_number, caller_number, called_number)
+func DoubleCallCmd(jobid string,user string,caller_number string,called_number string,ani string) string{
+	 return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}sofia/external/'%s'@10.0.0.61 '&lua('/usr/local/freeswitch/scripts/%s/main.lua' %s %s)'\nJob-UUID:%s\n\n",ani, caller_number, user,caller_number,called_number,jobid)
 }
 
-func VoiceIdentCallCmd(called_number string,ident_code string) string{
-	return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}sofia/external/'%s@10.0.0.61 '&lua('/usr/local/freeswitch/scripts/GreenTown/VoiceIdentCall.lua' %s %s)'",called_number,called_number,ident_code)
-
+func VoiceIdentCallCmd(jobid string,user string,called_number string,ident_code string,ani string) string{
+	return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}sofia/external/'%s'@10.0.0.61 '&lua('/usr/local/freeswitch/scripts/%s/VoiceIdentCall.lua' %s %s)'\nJob-UUID:%s\n\n",ani,called_number,user,called_number,ident_code,jobid)
 }
 
-func (c *FsClient) SendDoubleCall(app interface{}) (jobid string, err error) {
-	cmd:=DoubleCallCmd(app.(*DoubleCallApp).CallerNumber,app.(*DoubleCallApp).CalledNumber,app.(*DoubleCallApp).Ani)
+func DoubleCallTestCmd(jobid string,user string,caller_number string,called_number string,ani string) string{
+	return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}user/'%s'@192.168.1.224 '&lua('/usr/local/freeswitch/scripts/%s/DoubleCall.lua' %s %s)'\nJob-UUID:%s\n\n",ani, caller_number,user, caller_number, called_number,jobid)
+}
+
+func VoiceIdentCallTestCmd(jobid string,user string,called_number string,ident_code string,ani string) string  {
+	return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}user/'%s'@192.168.1.224 '&lua('/usr/local/freeswitch/scripts/%s/VoiceIdentCall.lua' %s %s)'\nJob-UUID:%s\n\n",ani,called_number,user,called_number,ident_code,jobid)
+}
+
+func (c *FsClient) SendDoubleCall(app interface{},jobid string) (err error) {
+	var cmd string
+	if(app.(*DoubleCallApp).CustomerName == "TEST"){
+		cmd=DoubleCallTestCmd(
+			jobid,
+			app.(*DoubleCallApp).CustomerName,
+			app.(*DoubleCallApp).Prefix + app.(*DoubleCallApp).CallerNumber,
+			app.(*DoubleCallApp).Prefix + app.(*DoubleCallApp).CalledNumber,
+			app.(*DoubleCallApp).Ani)
+	}else{
+		cmd=DoubleCallCmd(
+			jobid,
+			app.(*DoubleCallApp).CustomerName,
+			app.(*DoubleCallApp).Prefix + app.(*DoubleCallApp).CallerNumber,
+			app.(*DoubleCallApp).Prefix + app.(*DoubleCallApp).CalledNumber,
+			app.(*DoubleCallApp).Ani)
+	}
 	event, err := c.Connection.Send(cmd)
+	if err!=nil{
+		fmt.Println("senddoublecall error is ",err.Error())
+		return err
+	}
 	event.PrettyPrint()
-	return event.Get("Job-Uuid"), err
+	return nil
 }
 
-func (c *FsClient) SendVoiceIdentCall(app interface{})(jobid string,err error){
-	cmd:=VoiceIdentCallCmd(app.(*VoiceIdentCallApp).CalledNumber,app.(*VoiceIdentCallApp).IdentCode)
+func (c *FsClient) SendVoiceIdentCall(app interface{},jobid string)(err error){
+	var cmd string
+	if(app.(*VoiceIdentCallApp).CustomerName == "TEST") {
+		cmd = VoiceIdentCallTestCmd(
+			jobid,
+			app.(*VoiceIdentCallApp).CustomerName,
+			app.(*VoiceIdentCallApp).Prefix + app.(*VoiceIdentCallApp).CalledNumber,
+			app.(*VoiceIdentCallApp).IdentCode,
+			app.(*VoiceIdentCallApp).Ani)
+	}else{
+		cmd = VoiceIdentCallCmd(
+			jobid,
+			app.(*VoiceIdentCallApp).CustomerName,
+			app.(*VoiceIdentCallApp).Prefix + app.(*VoiceIdentCallApp).CalledNumber,
+			app.(*VoiceIdentCallApp).IdentCode,
+			app.(*VoiceIdentCallApp).Ani)
+	}
 	event,err:= c.Connection.Send(cmd)
+	if err!=nil{
+		fmt.Println("sendvoiceidentcall error is ", err.Error())
+		return err
+	}
 	event.PrettyPrint()
-	return event.Get("Job-Uuid"), err
+	return nil
+}
+
+func (c *FsClient) GetUuid() (jobid string,err error)  {
+	event,err := c.Connection.Send("bgapi create_uuid")
+	event.PrettyPrint()
+	return event.Get("Job-Uuid"),err
 }
 
 func (c *FsClient) ReadMessage() {
@@ -155,11 +209,23 @@ func (c *FsClient) ReadMessage() {
 			log.Fatal(err)
 		}
 		if bgevtname == ev.Get("Event-Name") {
+			/*
+			select {
+			case <-c.Completed:
+				jobid = ev.Get("Job-Uuid")
+				if _,ok :=c.Msg[jobid];!ok{
+					fmt.Println("can not find jobid mapped app ",jobid)
+					ev.PrettyPrint()
+					continue
+				}
+			case <- time.After(time.Second*10):
+			}
+			*/
 			jobid := ev.Get("Job-Uuid")
 			if _,ok :=c.Msg[jobid];!ok{
-				fmt.Println("the event is not current service scope\n")
+				fmt.Println("can not find jobid mapped app ",jobid)
 				ev.PrettyPrint()
-				return
+				continue
 			}
 			//获取body信息
 			ret := strings.Split(ev.Body, " ")
@@ -178,6 +244,7 @@ func (c *FsClient) ReadMessage() {
 			case *VoiceIdentCallApp:
 				c.Msg[jobid].(*VoiceIdentCallApp).Response <- &rsp
 			}
+			delete(c.Msg,jobid)
 			fmt.Println("\nNew event")
 			ev.PrettyPrint()
 		}

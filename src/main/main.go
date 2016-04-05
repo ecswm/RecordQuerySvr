@@ -115,7 +115,9 @@ func doublecall(rw http.ResponseWriter, req *http.Request) {
 	}
 
 	app := DoubleCallApp{CallerNumber:caller_number,CalledNumber:called_number}
-	app.CallApp = CallApp{AppName:"doublecall",
+	app.CallApp = CallApp{
+		Prefix:config.GetUserPrefix(user),
+		AppName:"doublecall",
 		CustomerName:user,
 		Ani:config.GetUserAni(user),
 		PushResultUrl:"",
@@ -143,7 +145,6 @@ func doublecall(rw http.ResponseWriter, req *http.Request) {
 	}
 }
 
-
 func voiceidentcall(rw http.ResponseWriter, req *http.Request)  {
 	fmt.Println("voiceidentcall request,the request info is:",req.URL.Path)
 	err:=req.ParseForm()
@@ -160,14 +161,14 @@ func voiceidentcall(rw http.ResponseWriter, req *http.Request)  {
 		authorization string
 	)
 	if req.Method == "POST"{
-		called_number,ident_code = req.PostFormValue("Called_number"), req.PostFormValue("ident_code")
+		called_number,ident_code = req.PostFormValue("called_number"), req.PostFormValue("ident_code")
 	}
 	if req.Method == "GET"{
 		called_number,ident_code = req.FormValue("called_number"),req.FormValue("ident_code")
 	}
 	sigparams = req.FormValue("SigParameter")
-	authorization = req.FormValue("Authorization")
-	fmt.Println(fmt.Sprintf("parseform voiceident data is {called_number: %s, ident_code: %s, sigs: %s}", called_number, ident_code, sigparams))
+	authorization = req.Header.Get("Authorization")
+	fmt.Println(fmt.Sprintf("parseform voiceident data is {called_number: %s, ident_code: %s, sigs: %s, auth: %s}", called_number, ident_code, sigparams,authorization))
 
 	var (
 		user string
