@@ -9,6 +9,7 @@ import (
 	"os"
 	_ "strconv"
 	"strings"
+	"logger"
 )
 
 type Configuration interface {
@@ -126,7 +127,7 @@ func (this configuration) DecodeSigParams(sigparams string, authorization string
 	ret := false
 	decoded, err := base64.StdEncoding.DecodeString(authorization)
 	if err != nil {
-		fmt.Println("decode error:", err)
+		logger.LogE("decode sigparams occur err,err is: []",err.Error())
 		return "", ret
 	}
 	outarray := strings.Split(string(decoded), ":")

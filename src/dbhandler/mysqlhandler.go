@@ -6,6 +6,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 	"time"
+	"logger"
 )
 
 type DBObj struct {
@@ -18,18 +19,18 @@ func NewDB(connectstring string) error {
 	DbObj = new(DBObj)
 	db, err := sql.Open("mysql", connectstring)
 	if err != nil {
-		fmt.Println("database initialize %s, connect_string is error : ", connectstring, err.Error())
+		logger.LogE("database initialize %s,connect_string is error: [%s]",connectstring,err.Error())
 		db.Close()
 		return err
 	}
 	err = db.Ping()
 	if err != nil {
-		fmt.Println("database ping is error : ", err.Error())
+		logger.LogE("database ping is err,err is: [%s]",err.Error())
 		db.Close()
 		log.Fatal(err)
 		return err
 	}
-	fmt.Println("connect database success")
+	logger.LogI("%s","connect database success")
 	DbObj.db = db
 	return nil
 }

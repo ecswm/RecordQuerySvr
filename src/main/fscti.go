@@ -11,6 +11,7 @@ import (
 	"time"
 	"dbhandler"
 	"github.com/satori/go.uuid"
+	"github.com/cihub/seelog"
 )
 
 var (
@@ -72,7 +73,6 @@ type FsClient struct {
 	*eventsocket.Connection
 	Apps chan  interface{}
 	Msg  map[string]interface{}
-	Completed	chan bool
 }
 
 /*
@@ -81,12 +81,13 @@ type FsClient struct {
 func ConnectFs() (*FsClient, error) {
 	c, err := eventsocket.Dial(config.GetEslUrl(), config.GetEslPwd())
 	if err != nil {
+		seelog.Errorf("connect freeswitch occur err,err is:[]",err.Error())
 		log.Fatal(err)
 	}
+	seelog.Infof("connect freeswitch success,addr is %s",config.GetEslUrl())
 	fsclient := FsClient{
 		Apps: make(chan interface{}, buffsize),
-		Msg:  make(map[string]interface{}),
-		Completed:make(chan bool)}
+		Msg:  make(map[string]interface{})}
 	fsclient.Connection = c
 	return &fsclient, err
 }
@@ -100,8 +101,8 @@ func (c *FsClient) PushAppRequest(app interface{}) {
 
 func (c *FsClient) PopAppRequest() {
 	for {
-		var app interface{}
 		var (
+			app interface{}
 			err error
 		)
 		select {
@@ -113,16 +114,16 @@ func (c *FsClient) PopAppRequest() {
 				err = c.SendDoubleCall(app,jobid)
 				dbhandler.DbObj.CreateJobInfo(jobid,app.(*DoubleCallApp).CustomerName, app.(*DoubleCallApp).AppName)
 				if err != nil {
+					seelog.Errorf("senddoublecall occurs err,err is: []",err.Error())
 					app.(*DoubleCallApp).Err <- err
 				}
-				//c.Completed <- true
 			case *VoiceIdentCallApp:
 				err = c.SendVoiceIdentCall(app,jobid)
 				dbhandler.DbObj.CreateJobInfo(jobid, app.(*VoiceIdentCallApp).CustomerName, app.(*VoiceIdentCallApp).AppName)
 				if err != nil {
+					seelog.Errorf("sendvoiceidentcall occurs err,err is: []",err.Error())
 					app.(*VoiceIdentCallApp).Err <- err
 				}
-				//c.Completed <- true
 			}
 		}
 	}
@@ -163,7 +164,6 @@ func (c *FsClient) SendDoubleCall(app interface{},jobid string) (err error) {
 	}
 	event, err := c.Connection.Send(cmd)
 	if err!=nil{
-		fmt.Println("senddoublecall error is ",err.Error())
 		return err
 	}
 	event.PrettyPrint()
@@ -189,7 +189,6 @@ func (c *FsClient) SendVoiceIdentCall(app interface{},jobid string)(err error){
 	}
 	event,err:= c.Connection.Send(cmd)
 	if err!=nil{
-		fmt.Println("sendvoiceidentcall error is ", err.Error())
 		return err
 	}
 	event.PrettyPrint()
@@ -209,21 +208,9 @@ func (c *FsClient) ReadMessage() {
 			log.Fatal(err)
 		}
 		if bgevtname == ev.Get("Event-Name") {
-			/*
-			select {
-			case <-c.Completed:
-				jobid = ev.Get("Job-Uuid")
-				if _,ok :=c.Msg[jobid];!ok{
-					fmt.Println("can not find jobid mapped app ",jobid)
-					ev.PrettyPrint()
-					continue
-				}
-			case <- time.After(time.Second*10):
-			}
-			*/
 			jobid := ev.Get("Job-Uuid")
 			if _,ok :=c.Msg[jobid];!ok{
-				fmt.Println("can not find jobid mapped app ",jobid)
+				seelog.Errorf("can not find jobid mapped app,jobid is: [%s]",jobid)
 				ev.PrettyPrint()
 				continue
 			}

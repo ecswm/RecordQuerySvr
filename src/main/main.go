@@ -8,16 +8,18 @@ import (
 	"os"
 	_ "strings"
 	"time"
+	"log"
+	"github.com/cihub/seelog"
 )
 
 var fsclient *FsClient = nil
 var config Configuration
 
 func insertrecording(rw http.ResponseWriter, req *http.Request) {
-	fmt.Println("insert recordinginfo request, the request info is ", req.URL.Path)
+	seelog.Infof("recv insertrecording request,the request info is: [%s]",req.URL.Path)
 	err := req.ParseForm()
 	if err != nil {
-		fmt.Println(fmt.Sprintf("parseform error is : %s", err.Error()))
+		seelog.Errorf("parse insertrecording request occur err,err is: [%s]",err.Error())
 		return
 	}
 	callid := req.FormValue("callid")
@@ -25,7 +27,7 @@ func insertrecording(rw http.ResponseWriter, req *http.Request) {
 	callednumber := req.FormValue("callednumber")
 	recordingpath := req.FormValue("recordingpath")
 
-	fmt.Println(fmt.Sprintf("parseform insertrecordinginfo request, data is %s_%s_%s_%s", callid, callernumber, callednumber, recordingpath))
+	seelog.Infof("parseform insertrecording request,data is {callid:%s,caller_number:%s,called_number:%s,recording_path:%s}",callid,callernumber,callednumber,recordingpath)
 	recordinginfo := dbhandler.RecordingInfo{callid,
 		recordingpath,
 		time.Now().Format("2006-01-02 15:04:05"),
@@ -35,7 +37,7 @@ func insertrecording(rw http.ResponseWriter, req *http.Request) {
 	ret, err := dbhandler.DbObj.InsertRecordingInfo(recordinginfo)
 	rsp := dbhandler.GenerateRspJson(&recordinginfo, "", "0")
 	if ret != true {
-		fmt.Println("insert new record error is ", err.Error())
+		seelog.Errorf("insertrecording occur err,err is: [%s]",err.Error())
 		rsp = dbhandler.GenerateRspJson(&recordinginfo, err.Error(), "0")
 	}
 	rw.Header().Set("content-type", "application/json")
@@ -43,45 +45,47 @@ func insertrecording(rw http.ResponseWriter, req *http.Request) {
 }
 
 func queryrecording(rw http.ResponseWriter, req *http.Request) {
-	fmt.Println("queryrecording request, the request info is ", req.URL.Path)
+	seelog.Infof("recv queryrecording request,the request info is: [%s]",req.URL.Path)
 	err := req.ParseForm()
 	if err != nil {
-		fmt.Println("parseform error is : ", err.Error())
+		seelog.Errorf("parse queryrecording request occur err,err is: [%s]",err.Error())
 		return
 	}
 	callid := req.FormValue("call_id")
-	fmt.Println(fmt.Sprintf("parseform queryrecord data is %s", callid))
-
+	seelog.Infof("parseform queryrecording request,data is {callid:%s}",callid)
 	recordingpath, err := dbhandler.DbObj.QueryRecordingPath(callid)
 	rw.Header().Set("content-type", "application/json")
 	if err != nil {
-		fmt.Println("queryrecording error is ", err.Error())
+		seelog.Errorf("queryrecording occur err,err is: [%s]",err.Error())
 		rsp := dbhandler.GenerateRspJson(nil, err.Error(), "")
 		rw.Write(rsp)
 		return
 	}
+
 	f, err := os.Open(recordingpath)
 	if err != nil {
+		seelog.Errorf("open recordingfile occur err,err is: [%s]",err.Error())
 		rsp := dbhandler.GenerateRspJson(nil, err.Error(), "")
 		rw.Write(rsp)
 		return
 	}
 	defer f.Close()
+
 	rw.Header().Set("content-type", "audio/wav")
 	bytes, err := io.Copy(rw, f)
 	if err != nil {
-		fmt.Println("Error: copy file to httpclient responsefailed:", err)
+		seelog.Errorf("copy recordingfile to client occur err,err is: [%s]",err.Error())
 	} else {
-		fmt.Printf("send %v to %v success with %v bytes\n", req.URL.Path, req.RemoteAddr, bytes)
+		seelog.Infof("send %v to %v succes with %v bytes\n",req.URL.Path,req.RemoteAddr,bytes)
 	}
 }
 
 func doublecall(rw http.ResponseWriter, req *http.Request) {
-	fmt.Println("doublecall request, the request info is:", req.URL.Path)
+	seelog.Infof("%s","recv doublecall request,the request info is: ",req.URL.Path)
 	err := req.ParseForm()
 
 	if err != nil {
-		fmt.Println("parse doublecall request error is: ", err.Error())
+		seelog.Errorf("parse doublecall request occur err,err is: [%s]",err.Error())
 		return
 	}
 
@@ -90,6 +94,8 @@ func doublecall(rw http.ResponseWriter, req *http.Request) {
 		called_number string
 		sigparams     string
 		authorization string
+		user 	string
+		ret     bool
 	)
 	if req.Method == "POST" {
 		caller_number, called_number = req.PostFormValue("Caller_number"), req.PostFormValue("Called_number")
@@ -100,19 +106,16 @@ func doublecall(rw http.ResponseWriter, req *http.Request) {
 	}
 	sigparams = req.FormValue("SigParameter")
 	authorization = req.Header.Get("Authorization")
-	fmt.Println(fmt.Sprintf("parseform doublecall data is {caller_number: %s, called_number: %s, sigs: %s}", caller_number, called_number, sigparams))
 
-	var (
-		user string
-		ret  bool
-	)
 	if user, ret = config.DecodeSigParams(sigparams, authorization); ret == false {
 		//检验未通过
+		seelog.Errorf("user authentication failed,appname:doublecall,cause:user is not exist or sigparams is incorrect")
 		rw.Header().Set("content-type", "text/plain")
 		rw.WriteHeader(http.StatusForbidden)
-		rw.Write([]byte("invalid user"))
+		rw.Write([]byte("invalid user or sigparams"))
 		return
 	}
+	seelog.Infof("parse doublecall data is {user:%s,caller_number:%s,called_number:%s,sigs:%s}",user,caller_number,called_number,sigparams)
 
 	app := DoubleCallApp{CallerNumber:caller_number,CalledNumber:called_number}
 	app.CallApp = CallApp{
@@ -146,19 +149,21 @@ func doublecall(rw http.ResponseWriter, req *http.Request) {
 }
 
 func voiceidentcall(rw http.ResponseWriter, req *http.Request)  {
-	fmt.Println("voiceidentcall request,the request info is:",req.URL.Path)
-	err:=req.ParseForm()
+	seelog.Infof("recv voiceidentcall request,the request info is: [%s]",req.URL.Path)
 
+	err:=req.ParseForm()
 	if err!=nil{
-		fmt.Println("parse voiceidentcall request error is:",err.Error())
+		seelog.Errorf("parse voiceidentcall request occur err,err is: [%s]",err.Error())
 		return
 	}
 
 	var(
-		called_number string
-		ident_code string
+		called_number   string
+		ident_code 	string
 		sigparams	string
-		authorization string
+		authorization 	string
+		user 		string
+		ret  		bool
 	)
 	if req.Method == "POST"{
 		called_number,ident_code = req.PostFormValue("called_number"), req.PostFormValue("ident_code")
@@ -168,22 +173,20 @@ func voiceidentcall(rw http.ResponseWriter, req *http.Request)  {
 	}
 	sigparams = req.FormValue("SigParameter")
 	authorization = req.Header.Get("Authorization")
-	fmt.Println(fmt.Sprintf("parseform voiceident data is {called_number: %s, ident_code: %s, sigs: %s, auth: %s}", called_number, ident_code, sigparams,authorization))
 
-	var (
-		user string
-		ret  bool
-	)
 	if user, ret = config.DecodeSigParams(sigparams, authorization); ret == false {
 		//检验未通过
+		seelog.Errorf("user authentication failed,appname:voiceidentcall,cause:user is not exist or sigparams is incorrect")
 		rw.Header().Set("content-type", "text/plain")
 		rw.WriteHeader(http.StatusForbidden)
 		rw.Write([]byte("invalid user"))
 		return
 	}
+	seelog.Infof("parseform voiceident data is {user:%s, called_number: %s, ident_code: %s, sigs: %s}", user,called_number,ident_code, sigparams)
 
 	app := VoiceIdentCallApp{IdentCode:ident_code,CalledNumber:called_number}
 	app.CallApp = CallApp{AppName:"voiceidentcall",
+		Prefix:config.GetUserPrefix(user),
 		CustomerName:user,
 		Ani:config.GetUserAni(user),
 		PushResultUrl:"",
@@ -212,9 +215,8 @@ func voiceidentcall(rw http.ResponseWriter, req *http.Request)  {
 
 }
 
-
 func initserver(url string) {
-	fmt.Println("begin fsappsvr,listen url is", url)
+	seelog.Infof("begin fsappsvr,listen url is: %s",url)
 	http.HandleFunc("/insertrecording", insertrecording)
 	http.HandleFunc("/queryrecording", queryrecording)
 	http.HandleFunc("/doublecall/", doublecall)
@@ -222,11 +224,24 @@ func initserver(url string) {
 	fmt.Println(http.ListenAndServe(url, nil))
 }
 
+
+func InitLogger(){
+	ILogger,err := seelog.LoggerFromConfigAsFile("./seelog.xml")
+
+	if err !=nil{
+		seelog.Critical("err parse config log file",err)
+		log.Fatal("err parse config log file")
+		return
+	}
+	seelog.ReplaceLogger(ILogger)
+}
+
 func main() {
+	InitLogger()
 	config = NewConfigEx("./config.json")
 	err := dbhandler.NewDB(config.GetDBConnectString())
 	if err != nil {
-		fmt.Println("connect to fs database error: ", err.Error())
+		seelog.Errorf("connect to fs database error: %s",err.Error())
 		os.Exit(0)
 	}
 	fsclient, err = ConnectFs()
