@@ -108,6 +108,22 @@ func (this *DBObj) UpdateJobInfo (jobid string,callid string,result string)(bool
 
 }
 
+//更新一个call信息
+func (this *DBObj) UpdateCallInfo(callid string,bridge_callid string,callstate string)(bool,error){
+	ret:= true
+	stmtIns,err:= this.db.Prepare(updatecallscript)
+	defer stmtIns.Close()
+
+	if err == nil{
+		_,err = stmtIns.Exec(callstate,bridge_callid,callid)
+		if err != nil{
+			fmt.Println("update jobinfo error :",err.Error())
+			ret = false
+		}
+	}
+	return ret,err
+}
+
 func (this *DBObj) DelRecordingInfo(callid string) {
 	stmt, err := this.db.Prepare(delrecscript)
 	defer stmt.Close()

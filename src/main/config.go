@@ -9,7 +9,7 @@ import (
 	"os"
 	_ "strconv"
 	"strings"
-	"logger"
+	"github.com/cihub/seelog"
 )
 
 type Configuration interface {
@@ -18,6 +18,7 @@ type Configuration interface {
 	GetListenUrl() string
 	GetEslUrl() string
 	GetEslPwd() string
+	GetUserGateWay(string) string
 	DecodeSigParams(sigparams string, authorization string) (string, bool)
 	GetDBConnectString() string
 }
@@ -30,6 +31,7 @@ type userinfo struct {
 	Ani  string
 	Name string
 	Key  string
+	GateWay string
 }
 
 /*
@@ -52,6 +54,7 @@ type userinfo struct {
 type configuration struct {
 	BindIp      string
 	BindPort    uint
+	GateWay	    string
 	FsHost      string
 	FsPort      uint
 	Password    string
@@ -63,6 +66,15 @@ type configuration struct {
 	DBPwd	    string
 	SupportApps []string
 	Users       []userinfo
+}
+
+func (this configuration) GetUserGateWay(name string) string {
+	for _, user := range this.Users {
+		if user.Name == name {
+			return user.GateWay
+		}
+	}
+	return this.GateWay
 }
 
 func (this configuration) GetUserAni(name string) string {
@@ -127,7 +139,7 @@ func (this configuration) DecodeSigParams(sigparams string, authorization string
 	ret := false
 	decoded, err := base64.StdEncoding.DecodeString(authorization)
 	if err != nil {
-		logger.LogE("decode sigparams occur err,err is: []",err.Error())
+		seelog.Errorf("decode sigparams occur err,err is: [%s]",err.Error())
 		return "", ret
 	}
 	outarray := strings.Split(string(decoded), ":")

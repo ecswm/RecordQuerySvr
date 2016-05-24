@@ -34,6 +34,8 @@ type VoiceIdentCallApp struct {
 包含呼叫双方号码,显示的主叫信息,JobId
 */
 type DoubleCallApp struct {
+	CallId string
+	Bridge_CallId string
 	CallerNumber string
 	CalledNumber string
 	CallApp
@@ -73,6 +75,7 @@ type FsClient struct {
 	*eventsocket.Connection
 	Apps chan  interface{}
 	Msg  map[string]interface{}
+	CallIdMapped map[string]string
 }
 
 /*
@@ -87,7 +90,8 @@ func ConnectFs() (*FsClient, error) {
 	seelog.Infof("connect freeswitch success,addr is %s",config.GetEslUrl())
 	fsclient := FsClient{
 		Apps: make(chan interface{}, buffsize),
-		Msg:  make(map[string]interface{})}
+		Msg:  make(map[string]interface{}),
+		CallIdMapped:make(map[string]string)}
 	fsclient.Connection = c
 	return &fsclient, err
 }
@@ -124,17 +128,18 @@ func (c *FsClient) PopAppRequest() {
 					seelog.Errorf("sendvoiceidentcall occurs err,err is: []",err.Error())
 					app.(*VoiceIdentCallApp).Err <- err
 				}
+
 			}
 		}
 	}
 }
 
 func DoubleCallCmd(jobid string,user string,caller_number string,called_number string,ani string) string{
-	 return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}sofia/external/'%s'@10.0.0.61 '&lua('/usr/local/freeswitch/scripts/%s/main.lua' %s %s)'\nJob-UUID:%s\n\n",ani, caller_number, user,caller_number,called_number,jobid)
+	 return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}sofia/external/'%s'@%s '&lua('/usr/local/freeswitch/scripts/%s/main.lua' %s %s)'\nJob-UUID:%s\n\n",ani, caller_number, config.GetUserGateWay(user), user,caller_number,called_number,jobid)
 }
 
 func VoiceIdentCallCmd(jobid string,user string,called_number string,ident_code string,ani string) string{
-	return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}sofia/external/'%s'@10.0.0.61 '&lua('/usr/local/freeswitch/scripts/%s/VoiceIdentCall.lua' %s %s)'\nJob-UUID:%s\n\n",ani,called_number,user,called_number,ident_code,jobid)
+	return fmt.Sprintf("bgapi originate {ignore_early_media=true,origination_caller_id_number='%s'}sofia/external/'%s'@%s '&lua('/usr/local/freeswitch/scripts/%s/VoiceIdentCall.lua' %s %s)'\nJob-UUID:%s\n\n",ani,called_number,config.GetUserGateWay(user),user,called_number,ident_code,jobid)
 }
 
 func DoubleCallTestCmd(jobid string,user string,caller_number string,called_number string,ani string) string{
@@ -148,7 +153,7 @@ func VoiceIdentCallTestCmd(jobid string,user string,called_number string,ident_c
 func (c *FsClient) SendDoubleCall(app interface{},jobid string) (err error) {
 	var cmd string
 	if(app.(*DoubleCallApp).CustomerName == "TEST"){
-		cmd=DoubleCallTestCmd(
+		cmd=DoubleCallCmd(
 			jobid,
 			app.(*DoubleCallApp).CustomerName,
 			app.(*DoubleCallApp).Prefix + app.(*DoubleCallApp).CallerNumber,
@@ -173,7 +178,7 @@ func (c *FsClient) SendDoubleCall(app interface{},jobid string) (err error) {
 func (c *FsClient) SendVoiceIdentCall(app interface{},jobid string)(err error){
 	var cmd string
 	if(app.(*VoiceIdentCallApp).CustomerName == "TEST") {
-		cmd = VoiceIdentCallTestCmd(
+		cmd = VoiceIdentCallCmd(
 			jobid,
 			app.(*VoiceIdentCallApp).CustomerName,
 			app.(*VoiceIdentCallApp).Prefix + app.(*VoiceIdentCallApp).CalledNumber,
@@ -196,7 +201,7 @@ func (c *FsClient) SendVoiceIdentCall(app interface{},jobid string)(err error){
 }
 
 func (c *FsClient) GetUuid() (jobid string,err error)  {
-	event,err := c.Connection.Send("bgapi create_uuid")
+	event,err := c.Connection.Send("create_uuid")
 	event.PrettyPrint()
 	return event.Get("Job-Uuid"),err
 }
@@ -207,7 +212,9 @@ func (c *FsClient) ReadMessage() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		if bgevtname == ev.Get("Event-Name") {
+		evtname := ev.Get("Event-Name")
+		switch evtname {
+		case "BACKGROUND_JOB":
 			jobid := ev.Get("Job-Uuid")
 			if _,ok :=c.Msg[jobid];!ok{
 				seelog.Errorf("can not find jobid mapped app,jobid is: [%s]",jobid)
@@ -232,8 +239,36 @@ func (c *FsClient) ReadMessage() {
 				c.Msg[jobid].(*VoiceIdentCallApp).Response <- &rsp
 			}
 			delete(c.Msg,jobid)
-			fmt.Println("\nNew event")
+			c.CallIdMapped[rsp.Call_Uuid] = ""
 			ev.PrettyPrint()
+			break
+		case "CHANNEL_BRIDGE":
+			ev.PrettyPrint()
+			callid := ev.Get("Bridge-A-Unique-Id")
+			if _,ok :=c.CallIdMapped[callid];!ok{
+				seelog.Errorf("the bridge-a-unique-id can not found in callidmap, the call is not current fsappsvr invoke, callid is: [%s]",callid)
+				ev.PrettyPrint()
+				continue
+			}
+			c.CallIdMapped[callid] = ev.Get("Bridge-B-Unique-Id")
+			dbhandler.DbObj.UpdateCallInfo(callid,c.CallIdMapped[callid],"BRIDGEING")
+			break
+		case "CHANNEL_HANGUP_COMPLETE":
+			ev.PrettyPrint()
+			bridge_callid := ev.Get("Variable_bridge_uuid")
+			if bridge_callid == ""{
+				seelog.Infof("the hangup_complete event not contains bridge_callid,the call is not bridge call")
+				ev.PrettyPrint()
+				continue
+			}
+			if _,ok:= c.CallIdMapped[bridge_callid];!ok{
+				seelog.Errorf("the bridge_callid can not found in callidmap,the callid is [%s]",bridge_callid)
+				ev.PrettyPrint()
+				continue
+			}
+			dbhandler.DbObj.UpdateCallInfo(bridge_callid,c.CallIdMapped[bridge_callid],ev.Get("Hangup-Cause"))
+			delete(c.CallIdMapped,bridge_callid)
+			break
 		}
 	}
 }

@@ -81,7 +81,7 @@ func queryrecording(rw http.ResponseWriter, req *http.Request) {
 }
 
 func doublecall(rw http.ResponseWriter, req *http.Request) {
-	seelog.Infof("%s","recv doublecall request,the request info is: ",req.URL.Path)
+	seelog.Infof("recv doublecall request,the request info is:[%s]",req.URL.Path)
 	err := req.ParseForm()
 
 	if err != nil {
@@ -215,12 +215,51 @@ func voiceidentcall(rw http.ResponseWriter, req *http.Request)  {
 
 }
 
+func outboundcall(rw http.ResponseWriter,req *http.Request){
+	seelog.Infof("recv outboundcall request,the request info is: [%s]",req.URL.Path)
+
+	err:=req.ParseForm()
+	if err!=nil{
+		seelog.Errorf("parse outboundcall request occur err,err is: [%s]",err.Error())
+		return
+	}
+
+	var(
+		called_number   string
+		caller_number 	string
+		sigparams	string
+		authorization 	string
+		user 		string
+		ret  		bool
+	)
+	if req.Method == "POST"{
+		called_number,caller_number = req.PostFormValue("called_number"), req.PostFormValue("caller_number")
+	}
+	if req.Method == "GET"{
+		called_number,caller_number = req.FormValue("called_number"),req.FormValue("caller_number")
+	}
+	sigparams = req.FormValue("SigParameter")
+	authorization = req.Header.Get("Authorization")
+
+	if user, ret = config.DecodeSigParams(sigparams, authorization); ret == false {
+		//检验未通过
+		seelog.Errorf("user authentication failed,appname:outboundcall,cause:user is not exist or sigparams is incorrect")
+		rw.Header().Set("content-type", "text/plain")
+		rw.WriteHeader(http.StatusForbidden)
+		rw.Write([]byte("invalid user"))
+		return
+	}
+	seelog.Infof("parseform outboundcall data is {user:%s, caller_number: %s, called_number: %s, sigs: %s}", user,caller_number,called_number, sigparams)
+
+}
+
 func initserver(url string) {
 	seelog.Infof("begin fsappsvr,listen url is: %s",url)
 	http.HandleFunc("/insertrecording", insertrecording)
 	http.HandleFunc("/queryrecording", queryrecording)
 	http.HandleFunc("/doublecall/", doublecall)
 	http.HandleFunc("/voiceidentcall/",voiceidentcall)
+	http.HandleFunc("/outboundcall/",outboundcall)
 	fmt.Println(http.ListenAndServe(url, nil))
 }
 
