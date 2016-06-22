@@ -35,7 +35,6 @@ type VoiceIdentCallApp struct {
 */
 type DoubleCallApp struct {
 	CallId string
-	Bridge_CallId string
 	CallerNumber string
 	CalledNumber string
 	CallApp
@@ -203,7 +202,7 @@ func (c *FsClient) SendVoiceIdentCall(app interface{},jobid string)(err error){
 func (c *FsClient) GetUuid() (jobid string,err error)  {
 	event,err := c.Connection.Send("create_uuid")
 	event.PrettyPrint()
-	return event.Get("Job-Uuid"),err
+	return event.Body,err
 }
 
 func (c *FsClient) ReadMessage() {
